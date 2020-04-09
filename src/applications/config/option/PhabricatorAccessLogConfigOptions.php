@@ -73,8 +73,8 @@ final class PhabricatorAccessLogConfigOptions
         ->setSummary(pht('Access log location.'))
         ->setDescription(
           pht(
-            "To enable the Phabricator access log, specify a path. The ".
-            "Phabricator access than normal HTTP access logs (for instance, ".
+            "To enable the ditCraft access log, specify a path. The ".
+            "ditCraft access than normal HTTP access logs (for instance, ".
             "it can show logged-in users, controllers, and other application ".
             "data).\n\n".
             "If not set, no log will be written."))
@@ -98,7 +98,7 @@ final class PhabricatorAccessLogConfigOptions
         ->setSummary(pht('SSH log location.'))
         ->setDescription(
           pht(
-            "To enable the Phabricator SSH log, specify a path. The ".
+            "To enable the ditCraft SSH log, specify a path. The ".
             "access log can provide more detailed information about SSH ".
             "access than a normal SSH log (for instance, it can show ".
             "logged-in users, commands, and other application data).\n\n".

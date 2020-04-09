@@ -38,8 +38,8 @@ final class DiffusionRepositoryURICredentialController
         ->setTitle(pht('Builtin URIs Do Not Use Credentials'))
         ->appendParagraph(
           pht(
-            'You can not set a credential for builtin URIs which Phabricator '.
-            'hosts and serves. Phabricator does not fetch from these URIs or '.
+            'You can not set a credential for builtin URIs which ditCraft '.
+            'hosts and serves. ditCraft does not fetch from these URIs or '.
             'push to these URIs, and does not need credentials to '.
             'authenticate any activity against them.'))
         ->addCancelButton($view_uri);

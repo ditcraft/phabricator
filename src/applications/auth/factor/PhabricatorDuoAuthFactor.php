@@ -133,7 +133,7 @@ final class PhabricatorDuoAuthFactor
         ->setTransactionType($xaction_usernames)
         ->setOptions(
           array(
-            'username' => pht('Use Phabricator Username'),
+            'username' => pht('Use ditCraft Username'),
             'email' => pht('Use Primary Email Address'),
           )),
       id(new PhabricatorSelectEditField())
@@ -510,7 +510,7 @@ final class PhabricatorDuoAuthFactor
         ->setIsError(true)
         ->setErrorMessage(
           pht(
-            'This factor has been removed from your device, so Phabricator '.
+            'This factor has been removed from your device, so ditCraft '.
             'can not send you a challenge. To continue, an administrator '.
             'must strip this factor from your account.'));
     }

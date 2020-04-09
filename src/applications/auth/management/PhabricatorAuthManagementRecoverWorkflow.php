@@ -10,7 +10,7 @@ final class PhabricatorAuthManagementRecoverWorkflow
       ->setSynopsis(
         pht(
           'Recover access to an account if you have locked yourself out '.
-          'of Phabricator.'))
+          'of ditCraft.'))
       ->setArguments(
         array(
           array(

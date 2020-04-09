@@ -209,7 +209,7 @@ final class PhabricatorOAuthServerAuthController
         ->setTitle(pht('Authenticate: %s', $name))
         ->appendParagraph(
           pht(
-            'This application ("%s") is authorized to use your Phabricator '.
+            'This application ("%s") is authorized to use your ditCraft '.
             'credentials. Continue to complete the authentication workflow.',
             phutil_tag('strong', array(), $name)))
         ->addCancelButton((string)$full_uri, pht('Continue to Application'));
@@ -248,7 +248,7 @@ final class PhabricatorOAuthServerAuthController
       ->appendParagraph(
         pht(
           'Do you want to authorize the external application "%s" to '.
-          'access your Phabricator account data, including your primary '.
+          'access your ditCraft account data, including your primary '.
           'email address?',
           phutil_tag('strong', array(), $name)))
       ->appendForm($form)
@@ -271,8 +271,8 @@ final class PhabricatorOAuthServerAuthController
         pht(
           'This application also requested additional unrecognized '.
           'permissions. These permissions may have existed in an older '.
-          'version of Phabricator, or may be from a future version of '.
-          'Phabricator. They will not be granted.'));
+          'version of ditCraft, or may be from a future version of '.
+          'ditCraft. They will not be granted.'));
 
       $unknown_form = id(new AphrontFormView())
         ->setViewer($viewer)

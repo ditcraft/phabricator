@@ -8,7 +8,7 @@ final class AphrontRedirectResponseTestCase extends PhabricatorTestCase {
 
     $uris = array(
       '/a' => array(
-        'http://phabricator.example.com/a',
+        'http://ditcraft.example.com/a',
         false,
       ),
       'a' => array(

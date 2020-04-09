@@ -84,7 +84,7 @@ final class PhabricatorAuthRegisterController
         $errors[] = pht(
           'The email address associated with this external account ("%s") is '.
           'not a valid email address and can not be used to register a '.
-          'Phabricator account. Choose a different, valid address.',
+          'ditCraft account. Choose a different, valid address.',
           phutil_tag('strong', array(), $default_email));
         $default_email = null;
       }
@@ -102,7 +102,7 @@ final class PhabricatorAuthRegisterController
         $errors[] = pht(
           'The email address associated with this account ("%s") is '.
           'already in use by an application and can not be used to '.
-          'register a new Phabricator account. Choose a different, valid '.
+          'register a new ditCraft account. Choose a different, valid '.
           'address.',
           phutil_tag('strong', array(), $default_email));
         $default_email = null;
@@ -122,7 +122,7 @@ final class PhabricatorAuthRegisterController
           array(
             pht(
               'The account you are attempting to register with has an invalid '.
-              'email address (%s). This Phabricator install only allows '.
+              'email address (%s). This ditCraft install only allows '.
               'registration with specific email addresses:',
               $debug_email),
             phutil_tag('br'),
@@ -157,15 +157,15 @@ final class PhabricatorAuthRegisterController
           ->addHiddenInput('phase', 1)
           ->appendParagraph(
             pht(
-              'You are creating a new Phabricator account linked to an '.
-              'existing external account from outside Phabricator.'))
+              'You are creating a new ditCraft account linked to an '.
+              'existing external account from outside ditCraft.'))
           ->appendParagraph(
             pht(
               'The email address ("%s") associated with the external account '.
-              'is already in use by an existing Phabricator account. Multiple '.
-              'Phabricator accounts may not have the same email address, so '.
+              'is already in use by an existing ditCraft account. Multiple '.
+              'ditCraft accounts may not have the same email address, so '.
               'you can not use this email address to register a new '.
-              'Phabricator account.',
+              'ditCraft account.',
               phutil_tag('strong', array(), $show_existing)))
           ->appendParagraph(
             pht(
@@ -174,7 +174,7 @@ final class PhabricatorAuthRegisterController
               'for the new account.'))
           ->appendParagraph(
             pht(
-              'If you want to link an existing Phabricator account to this '.
+              'If you want to link an existing ditCraft account to this '.
               'external account, do not continue. Instead: log in to your '.
               'existing account, then go to "Settings" and link the account '.
               'in the "External Accounts" panel.'))
@@ -187,8 +187,8 @@ final class PhabricatorAuthRegisterController
       } else {
         $errors[] = pht(
           'The external account you are registering with has an email address '.
-          'that is already in use ("%s") by an existing Phabricator account. '.
-          'Choose a new, valid email address to register a new Phabricator '.
+          'that is already in use ("%s") by an existing ditCraft account. '.
+          'Choose a new, valid email address to register a new ditCraft '.
           'account.',
           phutil_tag('strong', array(), $show_existing));
       }
@@ -595,7 +595,7 @@ final class PhabricatorAuthRegisterController
 
     if ($is_setup) {
       $crumbs->addTextCrumb(pht('Setup Admin Account'));
-        $title = pht('Welcome to Phabricator');
+        $title = pht('Welcome to ditCraft');
     } else {
       $crumbs->addTextCrumb(pht('Register'));
       $crumbs->addTextCrumb($provider->getProviderName());
@@ -607,7 +607,7 @@ final class PhabricatorAuthRegisterController
     if ($is_setup) {
       $welcome_view = id(new PHUIInfoView())
         ->setSeverity(PHUIInfoView::SEVERITY_NOTICE)
-        ->setTitle(pht('Welcome to Phabricator'))
+        ->setTitle(pht('Welcome to ditCraft'))
         ->appendChild(
           pht(
             'Installation is complete. Register your administrator account '.
@@ -710,7 +710,7 @@ final class PhabricatorAuthRegisterController
   }
 
   private function sendWaitingForApprovalEmail(PhabricatorUser $user) {
-    $title = '[Phabricator] '.pht(
+    $title = '[ditCraft] '.pht(
       'New User "%s" Awaiting Approval',
       $user->getUsername());
 

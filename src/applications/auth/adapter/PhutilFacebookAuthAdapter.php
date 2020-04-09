@@ -101,9 +101,9 @@ final class PhutilFacebookAuthAdapter extends PhutilOAuthAuthAdapter {
       if (empty($data['security_settings']['secure_browsing']['enabled'])) {
         throw new Exception(
           pht(
-            'This Phabricator install requires you to enable Secure Browsing '.
+            'This ditCraft install requires you to enable Secure Browsing '.
             'on your Facebook account in order to use it to log in to '.
-            'Phabricator. For more information, see %s',
+            'ditCraft. For more information, see %s',
             'https://www.facebook.com/help/156201551113407/'));
       }
     }

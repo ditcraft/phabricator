@@ -109,7 +109,7 @@ EOBANNER;
           'projects and users.'.
           "\n\n".
           'These tattered edges are an expected consequence of destroying '.
-          'objects, and the Phabricator upstream will not help you fix '.
+          'objects, and the ditCraft upstream will not help you fix '.
           'them. We strongly recommend disabling or archiving objects '.
           'instead.')));
 

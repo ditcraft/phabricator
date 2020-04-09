@@ -60,7 +60,7 @@ final class PhabricatorPeopleWelcomeMailEngine
 
     $message = array();
 
-    $message[] = pht('Welcome to Phabricator!');
+    $message[] = pht('Welcome to ditCraft!');
 
     $message[] = pht(
       '%s (%s) has created an account for you.',
@@ -80,10 +80,10 @@ final class PhabricatorPeopleWelcomeMailEngine
     $use_passwords = PhabricatorPasswordAuthProvider::getPasswordProvider();
     if ($use_passwords) {
       $message[] = pht(
-        'To log in to Phabricator, follow this link and set a password:');
+        'To log in to ditCraft, follow this link and set a password:');
       $message[] = pht('  %s', $uri);
       $message[] = pht(
-        'After you have set a password, you can log in to Phabricator in '.
+        'After you have set a password, you can log in to ditCraft in '.
         'the future by going here:');
       $message[] = pht('  %s', $base_uri);
     } else {
@@ -91,7 +91,7 @@ final class PhabricatorPeopleWelcomeMailEngine
         'To log in to your account for the first time, follow this link:');
       $message[] = pht('  %s', $uri);
       $message[] = pht(
-        'After you set up your account, you can log in to Phabricator in '.
+        'After you set up your account, you can log in to ditCraft in '.
         'the future by going here:');
       $message[] = pht('  %s', $base_uri);
     }
@@ -104,7 +104,7 @@ final class PhabricatorPeopleWelcomeMailEngine
     $message = implode("\n\n", $message);
 
     return id(new PhabricatorMetaMTAMail())
-      ->setSubject(pht('[Phabricator] Welcome to Phabricator'))
+      ->setSubject(pht('[ditCraft] Welcome to ditCraft'))
       ->setBody($message);
   }
 
@@ -125,7 +125,7 @@ final class PhabricatorPeopleWelcomeMailEngine
 
     $is_serious = PhabricatorEnv::getEnvConfig('phabricator.serious-business');
     if (!$is_serious) {
-      return pht("Love,\nPhabricator");
+      return pht("Love,\nditCraft");
     }
 
     return null;

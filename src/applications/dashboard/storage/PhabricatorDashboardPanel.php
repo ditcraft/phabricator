@@ -97,7 +97,7 @@ final class PhabricatorDashboardPanel
         pht(
           'Attempting to use a panel in a way that requires an '.
           'implementation, but the panel implementation ("%s") is unknown to '.
-          'Phabricator.',
+          'ditCraft.',
           $this->getPanelType()));
     }
     return $impl;

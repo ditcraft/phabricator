@@ -1945,7 +1945,7 @@ final class PhabricatorRepository extends PhabricatorRepositoryDAO
           'point at this host, or the "device.id" configuration file on '.
           'this host may be incorrect.'.
           "\n\n".
-          'Requests routed within the cluster by Phabricator are always '.
+          'Requests routed within the cluster by ditCraft are always '.
           'expected to be sent to a node which can serve the request. To '.
           'prevent loops, this request will not be proxied again.'.
           "\n\n".
@@ -2207,7 +2207,7 @@ final class PhabricatorRepository extends PhabricatorRepositoryDAO
         throw new PhutilAggregateException(
           pht(
             'Unable to read device public key while attempting to make '.
-            'authenticated method call within the Phabricator cluster. '.
+            'authenticated method call within the ditCraft cluster. '.
             'Use `%s` to register keys for this device. Exception: %s',
             'bin/almanac register',
             $ex->getMessage()),
@@ -2222,7 +2222,7 @@ final class PhabricatorRepository extends PhabricatorRepositoryDAO
         throw new PhutilAggregateException(
           pht(
             'Unable to read device private key while attempting to make '.
-            'authenticated method call within the Phabricator cluster. '.
+            'authenticated method call within the ditCraft cluster. '.
             'Use `%s` to register keys for this device. Exception: %s',
             'bin/almanac register',
             $ex->getMessage()),

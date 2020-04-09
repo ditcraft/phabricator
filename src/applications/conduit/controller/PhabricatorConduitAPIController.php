@@ -235,7 +235,7 @@ final class PhabricatorConduitAPIController
           return array(
             'ERR-INVALID-AUTH',
             pht(
-              'This request originates from outside of the Phabricator '.
+              'This request originates from outside of the ditCraft '.
               'cluster address range. Requests signed with trusted '.
               'device keys must originate from within the cluster.'),
           );
@@ -338,7 +338,7 @@ final class PhabricatorConduitAPIController
           return array(
             'ERR-INVALID-AUTH',
             pht(
-              'This request originates from outside of the Phabricator '.
+              'This request originates from outside of the ditCraft '.
               'cluster address range. Requests signed with cluster API '.
               'tokens must originate from within the cluster.'),
           );

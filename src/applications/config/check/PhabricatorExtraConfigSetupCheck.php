@@ -40,7 +40,7 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
         $message = pht(
           "The configuration option '%s' is not recognized. It may be ".
           "misspelled, or it might have existed in an older version of ".
-          "Phabricator. It has no effect, and should be corrected or deleted.",
+          "ditCraft. It has no effect, and should be corrected or deleted.",
           $key);
         $short = pht('Unknown Config');
         $name = pht('Unknown Configuration Option "%s"', $key);
@@ -155,7 +155,7 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
         'details about this setup issue, see %s.'.
         "\n\n".
         'This database value is currently respected, but a future version '.
-        'of Phabricator will stop respecting database values for locked '.
+        'of ditCraft will stop respecting database values for locked '.
         'configuration options.',
         $key,
         $set_command,
@@ -191,7 +191,7 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
           pht(
             'The "feed.http-hooks" option is deprecated in favor of '.
             'Webhooks. This option will be removed in a future version '.
-            'of Phabricator.'.
+            'of ditCrafts.'.
             "\n\n".
             'You can configure Webhooks in Herald.'.
             "\n\n".
@@ -283,7 +283,7 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
       'Reply handlers can no longer be overridden with configuration.');
 
     $monospace_reason = pht(
-      'Phabricator no longer supports global customization of monospaced '.
+      'ditCraft no longer supports global customization of monospaced '.
       'fonts.');
 
     $public_mail_reason = pht(
@@ -343,7 +343,7 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
       'auth.sshkeys.enabled' => pht(
         'SSH keys are now actually useful, so they are always enabled.'),
       'differential.anonymous-access' => pht(
-        'Phabricator now has meaningful global access controls. See `%s`.',
+        'ditCraft now has meaningful global access controls. See `%s`.',
         'policy.allow-public'),
       'celerity.resource-path' => pht(
         'An alternate resource map is no longer supported. Instead, use '.
@@ -353,7 +353,7 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
       'auth.sessions.conduit' => $session_reason,
       'auth.sessions.web' => $session_reason,
       'tokenizer.ondemand' => pht(
-        'Phabricator now manages typeahead strategies automatically.'),
+        'ditCraft now manages typeahead strategies automatically.'),
       'differential.revision-custom-detail-renderer' => pht(
         'Obsolete; use standard rendering events instead.'),
       'differential.show-host-field' => $differential_field_reason,
@@ -380,16 +380,16 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
         'pool size with `%s`.',
         'phd.taskmasters'),
       'storage.engine-selector' => pht(
-        'Phabricator now automatically discovers available storage engines '.
+        'ditCraft now automatically discovers available storage engines '.
         'at runtime.'),
       'storage.upload-size-limit' => pht(
-        'Phabricator now supports arbitrarily large files. Consult the '.
+        'ditCraft now supports arbitrarily large files. Consult the '.
         'documentation for configuration details.'),
       'security.allow-outbound-http' => pht(
         'This option has been replaced with the more granular option `%s`.',
         'security.outbound-blacklist'),
       'metamta.reply.show-hints' => pht(
-        'Phabricator no longer shows reply hints in mail.'),
+        'ditCraft no longer shows reply hints in mail.'),
 
       'metamta.differential.reply-handler-domain' => $reply_domain_reason,
       'metamta.diffusion.reply-handler-domain' => $reply_domain_reason,
@@ -403,14 +403,14 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
       'metamta.package.reply-handler' => $reply_handler_reason,
 
       'metamta.precedence-bulk' => pht(
-        'Phabricator now always sends transaction mail with '.
+        'ditCraft now always sends transaction mail with '.
         '"Precedence: bulk" to improve deliverability.'),
 
       'style.monospace' => $monospace_reason,
       'style.monospace.windows' => $monospace_reason,
 
       'search.engine-selector' => pht(
-        'Phabricator now automatically discovers available search engines '.
+        'ditCraft now automatically discovers available search engines '.
         'at runtime.'),
 
       'metamta.files.public-create-email' => $public_mail_reason,
@@ -466,11 +466,11 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
       'maniphest.priorities.needs-triage' => $dashboard_reason,
 
       'mysql.implementation' => pht(
-        'Phabricator now automatically selects the best available '.
+        'ditCraft now automatically selects the best available '.
         'MySQL implementation.'),
 
       'mysql.configuration-provider' => pht(
-        'Phabricator now has application-level management of partitioning '.
+        'ditCraft now has application-level management of partitioning '.
         'and replicas.'),
 
       'search.elastic.host' => $elastic_reason,
@@ -538,7 +538,7 @@ final class PhabricatorExtraConfigSetupCheck extends PhabricatorSetupCheck {
         'Whitespace rendering is now handled automatically.'),
 
       'phd.pid-directory' => pht(
-        'Phabricator daemons no longer use PID files.'),
+        'ditCraft daemons no longer use PID files.'),
     );
 
     return $ancient_config;

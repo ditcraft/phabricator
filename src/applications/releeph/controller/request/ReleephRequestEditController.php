@@ -264,7 +264,7 @@ final class ReleephRequestEditController extends ReleephBranchController {
             ->setCaption(
               pht(
                 'Start typing to autocomplete on commit title, '.
-                'or give a Phabricator commit identifier like rFOO1234.')));
+                'or give a ditCraft commit identifier like rFOO1234.')));
       }
     }
 

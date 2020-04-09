@@ -62,12 +62,12 @@ final class AlmanacManagementTrustKeyWorkflow
         pht(
           'Trusting a public key gives anyone holding the corresponding '.
           'private key complete, unrestricted access to all data in '.
-          'Phabricator. The private key will be able to sign requests that '.
+          'ditCraft. The private key will be able to sign requests that '.
           'skip policy and security checks.')),
       phutil_console_wrap(
         pht(
           'This is an advanced feature which should normally be used only '.
-          'when building a Phabricator cluster. This feature is very '.
+          'when building a ditCraft cluster. This feature is very '.
           'dangerous if misused.')),
       pht('This key is associated with device "%s".', $handle->getName()));
 

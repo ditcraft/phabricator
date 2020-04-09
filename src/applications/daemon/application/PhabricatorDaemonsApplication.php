@@ -7,7 +7,7 @@ final class PhabricatorDaemonsApplication extends PhabricatorApplication {
   }
 
   public function getShortDescription() {
-    return pht('Manage Phabricator Daemons');
+    return pht('Manage ditCraft Daemons');
   }
 
   public function getBaseURI() {

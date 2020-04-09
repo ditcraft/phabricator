@@ -10,7 +10,7 @@ final class PhabricatorWorkerManagementFloodWorkflow
       ->setSynopsis(
         pht(
           'Flood the queue with test tasks. This command is intended for '.
-          'use when developing and debugging Phabricator.'))
+          'use when developing and debugging ditCraft.'))
       ->setArguments(
         array(
           array(

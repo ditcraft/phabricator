@@ -15,10 +15,10 @@ final class PhabricatorPHPPreflightSetupCheck extends PhabricatorSetupCheck {
     if (version_compare($version, 7, '>=') &&
         version_compare($version, 7.1, '<')) {
       $message = pht(
-        'You are running PHP version %s. Phabricator does not support PHP '.
+        'You are running PHP version %s. ditCraft does not support PHP '.
         'versions between 7.0 and 7.1.'.
         "\n\n".
-        'PHP removed signal handling features that Phabricator requires in '.
+        'PHP removed signal handling features that ditCraft requires in '.
         'PHP 7.0, and did not restore them until PHP 7.1.'.
         "\n\n".
         'Upgrade to PHP 7.1 or newer (recommended) or downgrade to an older '.
@@ -31,7 +31,7 @@ final class PhabricatorPHPPreflightSetupCheck extends PhabricatorSetupCheck {
         ->setMessage($message)
         ->addLink(
           'https://phurl.io/u/php7',
-          pht('Phabricator PHP 7 Compatibility Information'));
+          pht('ditCraft PHP 7 Compatibility Information'));
 
       return;
     }
@@ -39,7 +39,7 @@ final class PhabricatorPHPPreflightSetupCheck extends PhabricatorSetupCheck {
     $safe_mode = ini_get('safe_mode');
     if ($safe_mode) {
       $message = pht(
-        "You have '%s' enabled in your PHP configuration, but Phabricator ".
+        "You have '%s' enabled in your PHP configuration, but ditCraft ".
         "will not run in safe mode. Safe mode has been deprecated in PHP 5.3 ".
         "and removed in PHP 5.4.\n\nDisable safe mode to continue.",
         'safe_mode');
@@ -89,7 +89,7 @@ final class PhabricatorPHPPreflightSetupCheck extends PhabricatorSetupCheck {
         if ($fatal) {
           $message = pht(
             "You have '%s' enabled in your PHP configuration.\n\n".
-            "This option is not compatible with Phabricator. Remove ".
+            "This option is not compatible with ditCraft. Remove ".
             "'%s' from your configuration to continue.",
             $disable_option,
             $disable_option);
@@ -108,7 +108,7 @@ final class PhabricatorPHPPreflightSetupCheck extends PhabricatorSetupCheck {
     if ($func_overload) {
       $message = pht(
         "You have '%s' enabled in your PHP configuration.\n\n".
-        "This option is not compatible with Phabricator. Disable ".
+        "This option is not compatible with ditCraft. Disable ".
         "'%s' in your PHP configuration to continue.",
         $overload_option,
         $overload_option);
@@ -131,7 +131,7 @@ final class PhabricatorPHPPreflightSetupCheck extends PhabricatorSetupCheck {
       // rare (particularly in supported environments).
 
       $message = pht(
-        "Your server is configured with '%s', which prevents Phabricator ".
+        "Your server is configured with '%s', which prevents ditCraft ".
         "from opening files it requires access to.\n\n".
         "Disable this setting to continue.",
         'open_basedir');

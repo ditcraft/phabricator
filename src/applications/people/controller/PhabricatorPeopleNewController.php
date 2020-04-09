@@ -182,7 +182,7 @@ final class PhabricatorPeopleNewController
           ->addCheckbox(
             'welcome',
             1,
-            pht('Send "Welcome to Phabricator" email with login instructions.'),
+            pht('Send "Welcome to ditCraft" email with login instructions.'),
             $welcome_checked));
     }
 
@@ -199,7 +199,7 @@ final class PhabricatorPeopleNewController
           pht(
             '**Why do bot accounts need an email address?**'.
             "\n\n".
-            'Although bots do not normally receive email from Phabricator, '.
+            'Although bots do not normally receive email from ditCraft, '.
             'they can interact with other systems which require an email '.
             'address. Examples include:'.
             "\n\n".
@@ -207,7 +207,7 @@ final class PhabricatorPeopleNewController
             "    an address to use in the //From// header.\n".
             "  - If the account creates commits, Git and Mercurial require ".
             "    an email address for authorship.\n".
-            "  - If you send email //to// Phabricator on behalf of the ".
+            "  - If you send email //to// ditCraft on behalf of the ".
             "    account, the address can identify the sender.\n".
             "  - Some internal authentication functions depend on accounts ".
             "    having an email address.\n".

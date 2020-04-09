@@ -51,7 +51,7 @@ final class PhabricatorAuthInviteWorker
       ->setForceDelivery(true)
       ->setSubject(
         pht(
-          '[Phabricator] %s has invited you to join Phabricator',
+          '[ditCraft] %s has invited you to join Phabricator',
           $author->getFullName()))
       ->setBody($template)
       ->saveAndSend();

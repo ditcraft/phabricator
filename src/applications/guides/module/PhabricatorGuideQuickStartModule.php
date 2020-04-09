@@ -132,7 +132,7 @@ final class PhabricatorGuideQuickStartModule extends PhabricatorGuideModule {
     $icon = 'fa-globe';
     $icon_bg = 'bg-sky';
     $description =
-      pht('See all the applications included in Phabricator.');
+      pht('See all the applications included in ditCraft.');
 
     $item = id(new PhabricatorGuideItemView())
       ->setTitle($title)
@@ -159,7 +159,7 @@ final class PhabricatorGuideQuickStartModule extends PhabricatorGuideModule {
         $icon = 'fa-group';
         $icon_bg = 'bg-sky';
         $description =
-          pht('Invite the rest of your team to get started on Phabricator.');
+          pht('Invite the rest of your team to get started on ditCraft.');
       }
 
       $item = id(new PhabricatorGuideItemView())
@@ -172,10 +172,10 @@ final class PhabricatorGuideQuickStartModule extends PhabricatorGuideModule {
     }
 
     $intro = pht(
-      'If you\'re new to Phabricator, these optional steps can help you learn '.
-      'the basics. Conceptually, Phabricator is structured as a graph, and '.
+      'If you\'re new to ditCraft, these optional steps can help you learn '.
+      'the basics. Conceptually, ditCraft is structured as a graph, and '.
       'repositories, tasks, and projects are all independent from each other. '.
-      'Feel free to set up Phabricator for how you work best, and explore '.
+      'Feel free to set up ditCraft for how you work best, and explore '.
       'these features at your own pace.');
 
     $intro = new PHUIRemarkupView($viewer, $intro);

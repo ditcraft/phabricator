@@ -49,12 +49,12 @@ final class PhabricatorAuthDisableController
       if ($config->getShouldAllowRegistration()) {
         $body = pht(
           'Do you want to enable this provider? Users will be able to use '.
-          'their existing external accounts to register new Phabricator '.
+          'their existing external accounts to register new ditCraft '.
           'accounts and log in using linked accounts.');
       } else {
         $body = pht(
           'Do you want to enable this provider? Users will be able to log '.
-          'in to Phabricator using linked accounts.');
+          'in to ditCraft using linked accounts.');
       }
       $button = pht('Enable Provider');
     } else {

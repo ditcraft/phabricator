@@ -85,7 +85,7 @@ final class PhabricatorOpcodeCacheSpec extends PhabricatorCacheSpec {
 
         $message = pht(
           'The "%s" setting is currently disabled in your PHP configuration, '.
-          'but Phabricator is running in development mode. This option should '.
+          'but ditCraft is running in development mode. This option should '.
           'normally be enabled in development so you do not need to restart '.
           'anything after making changes to the code.',
           'apc.stat');

@@ -13,9 +13,9 @@ final class TransactionSearchConduitAPIMethod
 
   public function getMethodDocumentation() {
     $markup = pht(<<<EOREMARKUP
-When an object (like a task) is edited, Phabricator creates a "transaction"
+When an object (like a task) is edited, ditCraft creates a "transaction"
 and applies it. This list of transactions on each object is the basis for
-essentially all edits and comments in Phabricator. Reviewing the transaction
+essentially all edits and comments in ditCraft. Reviewing the transaction
 record allows you to see who edited an object, when, and how their edit changed
 things.
 

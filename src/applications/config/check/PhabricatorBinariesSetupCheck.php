@@ -15,7 +15,7 @@ final class PhabricatorBinariesSetupCheck extends PhabricatorSetupCheck {
 
     if (!Filesystem::binaryExists($bin_name)) {
       $message = pht(
-        "Without '%s', Phabricator can not test for the availability ".
+        "Without '%s', ditCraft can not test for the availability ".
         "of other binaries.",
         $bin_name);
       $this->raiseWarning($bin_name, $message);
@@ -27,7 +27,7 @@ final class PhabricatorBinariesSetupCheck extends PhabricatorSetupCheck {
 
     if (!Filesystem::binaryExists('diff')) {
       $message = pht(
-        "Without '%s', Phabricator will not be able to generate or render ".
+        "Without '%s', ditCraft will not be able to generate or render ".
         "diffs in multiple applications.",
         'diff');
       $this->raiseWarning('diff', $message);
@@ -168,7 +168,7 @@ final class PhabricatorBinariesSetupCheck extends PhabricatorSetupCheck {
       $preamble = pht(
         "The '%s' binary could not be found. Set the webserver's %s ".
         "environmental variable to include the directory where it resides, or ".
-        "add that directory to '%s' in the Phabricator configuration.",
+        "add that directory to '%s' in the ditCraft configuration.",
         $bin,
         'PATH',
         'environment.append-paths');
@@ -176,7 +176,7 @@ final class PhabricatorBinariesSetupCheck extends PhabricatorSetupCheck {
       $preamble = pht(
         "The '%s' binary could not be found. Symlink it into '%s', or set the ".
         "webserver's %s environmental variable to include the directory where ".
-        "it resides, or add that directory to '%s' in the Phabricator ".
+        "it resides, or add that directory to '%s' in the ditCraft ".
         "configuration.",
         $bin,
         'phabricator/support/bin/',
@@ -200,7 +200,7 @@ final class PhabricatorBinariesSetupCheck extends PhabricatorSetupCheck {
 
     $message = pht(
       'Unable to determine the version number of "%s". Usually, this means '.
-      'the program changed its version format string recently and Phabricator '.
+      'the program changed its version format string recently and ditCraft '.
       'does not know how to parse the new one yet, but might indicate that '.
       'you have a very old (or broken) binary.'.
       "\n\n".
@@ -208,11 +208,11 @@ final class PhabricatorBinariesSetupCheck extends PhabricatorSetupCheck {
       'minimum and known-bad versions will be skipped, so we might fail '.
       'to detect an incompatible binary.'.
       "\n\n".
-      'You may be able to resolve this issue by updating Phabricator, since '.
-      'a newer version of Phabricator is likely to be able to parse the '.
+      'You may be able to resolve this issue by updating ditCraft, since '.
+      'a newer version of ditCraft is likely to be able to parse the '.
       'newer version string.'.
       "\n\n".
-      'If updating Phabricator does not fix this, you can report the issue '.
+      'If updating ditCraft does not fix this, you can report the issue '.
       'to the upstream so we can adjust the parser.'.
       "\n\n".
       'If you are confident you have a recent version of "%s" installed and '.

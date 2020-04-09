@@ -11,7 +11,7 @@ final class PhabricatorLDAPAuthProvider extends PhabricatorAuthProvider {
   public function getDescriptionForCreate() {
     return pht(
       'Configure a connection to an LDAP server so that users can use their '.
-      'LDAP credentials to log in to Phabricator.');
+      'LDAP credentials to log in to ditCraft.');
   }
 
   public function getDefaultProviderConfig() {

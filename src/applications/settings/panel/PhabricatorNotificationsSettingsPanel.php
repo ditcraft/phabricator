@@ -69,7 +69,7 @@ final class PhabricatorNotificationsSettingsPanel
       array(),
       array(
         pht('This browser has not yet granted permission to send desktop '.
-        'notifications for this Phabricator instance.'),
+        'notifications for this ditCraft instance.'),
         phutil_tag('br'),
         phutil_tag('br'),
         javelin_tag(
@@ -84,12 +84,12 @@ final class PhabricatorNotificationsSettingsPanel
       'span',
       array(),
       pht('This browser has been granted permission to send desktop '.
-          'notifications for this Phabricator instance.'));
+          'notifications for this ditCraft instance.'));
     $denied_status = phutil_tag(
       'span',
       array(),
       pht('This browser has denied permission to send desktop notifications '.
-          'for this Phabricator instance. Consult your browser settings / '.
+          'for this ditCraft instance. Consult your browser settings / '.
           'documentation to figure out how to clear this setting, do so, '.
           'and then re-visit this page to grant permission.'));
 
@@ -146,7 +146,7 @@ final class PhabricatorNotificationsSettingsPanel
         ->setOptions(PhabricatorNotificationsSetting::getOptionsMap())
         ->setCaption(
           pht(
-            'Phabricator can send real-time notifications to your web browser '.
+            'ditCraft can send real-time notifications to your web browser '.
             'or to your desktop. Select where you want to receive these '.
             'real-time updates.'))
         ->initBehavior(

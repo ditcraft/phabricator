@@ -67,11 +67,11 @@ final class PhabricatorRepositoryManagementLookupUsersWorkflow
         if ($handle) {
           $console->writeOut(
             "%s\n",
-            pht('Phabricator user: %s', $handle->getFullName()));
+            pht('ditCraft user: %s', $handle->getFullName()));
         } else {
           $console->writeOut(
             "%s\n",
-            pht('Unable to resolve a corresponding Phabricator user.'));
+            pht('Unable to resolve a corresponding ditCraft user.'));
         }
       }
 
@@ -85,11 +85,11 @@ final class PhabricatorRepositoryManagementLookupUsersWorkflow
         if ($handle) {
           $console->writeOut(
             "%s\n",
-            pht('Phabricator user: %s', $handle->getFullName()));
+            pht('ditCraft user: %s', $handle->getFullName()));
         } else {
           $console->writeOut(
             "%s\n",
-            pht('Unable to resolve a corresponding Phabricator user.'));
+            pht('Unable to resolve a corresponding ditCraft user.'));
         }
       }
     }

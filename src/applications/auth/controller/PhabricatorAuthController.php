@@ -254,11 +254,11 @@ abstract class PhabricatorAuthController extends PhabricatorController {
     }
 
     $invite_item = id(new PHUIObjectItemView())
-      ->setHeader(pht('Welcome to Phabricator!'))
+      ->setHeader(pht('Welcome to ditCraft!'))
       ->setImageURI($invite_author->getProfileImageURI())
       ->addAttribute(
         pht(
-          '%s has invited you to join Phabricator.',
+          '%s has invited you to join ditCraft.',
           $invite_author->getFullName()));
 
     $invite_list = id(new PHUIObjectItemListView())

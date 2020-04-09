@@ -96,7 +96,7 @@ abstract class PhabricatorCacheSpec extends Phobject {
     $summary = pht('Enabling APC/APCu will improve performance.');
     $message = pht(
       'The APC or APCu PHP extensions are installed, but not enabled in your '.
-      'PHP configuration. Enabling these extensions will improve Phabricator '.
+      'PHP configuration. Enabling these extensions will improve ditCraft '.
       'performance. Edit the "%s" setting to enable these extensions.',
       'apc.enabled');
 

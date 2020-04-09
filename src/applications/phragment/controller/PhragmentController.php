@@ -210,7 +210,7 @@ abstract class PhragmentController extends PhabricatorController {
               "Because Phragment generates files (such as ZIP archives and ".
               "patches) as they are requested, it requires that you configure ".
               "the `%s` option. This option on it's own will also provide ".
-              "additional security when serving files across Phabricator.",
+              "additional security when serving files across ditCraft.",
               'security.alternate-file-domain')));
     }
     return null;

@@ -23,7 +23,7 @@ final class PhabricatorTranslationSetting
 
   protected function getControlInstructions() {
     return pht(
-      'Choose which language you would like the Phabricator UI to use.');
+      'Choose which language you would like the ditCraft UI to use.');
   }
 
   public function assertValidValue($value) {

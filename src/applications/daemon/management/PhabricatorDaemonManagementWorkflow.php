@@ -579,7 +579,7 @@ abstract class PhabricatorDaemonManagementWorkflow
           $console->writeErr(
             "%s\n",
             pht(
-              'PID "%d" is not a known Phabricator daemon PID.',
+              'PID "%d" is not a known ditCraft daemon PID.',
               $pid));
           continue;
         } else {

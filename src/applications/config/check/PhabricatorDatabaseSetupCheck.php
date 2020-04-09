@@ -177,7 +177,7 @@ final class PhabricatorDatabaseSetupCheck extends PhabricatorSetupCheck {
           'Database host "%s" is configured as a master, but is replicating '.
           'another host. This is dangerous and can mangle or destroy data. '.
           'Only replicas should be replicating. Stop replication on the '.
-          'host or reconfigure Phabricator.',
+          'host or reconfigure ditCraft.',
           $ref->getRefKey());
 
         $this->newIssue('db.master.replicating')

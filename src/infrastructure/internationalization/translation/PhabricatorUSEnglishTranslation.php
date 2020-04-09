@@ -496,9 +496,9 @@ final class PhabricatorUSEnglishTranslation
         'Install these PHP extensions:',
       ),
 
-      'The current Phabricator configuration has these %d value(s):' => array(
-        'The current Phabricator configuration has this value:',
-        'The current Phabricator configuration has these values:',
+      'The current ditCraft configuration has these %d value(s):' => array(
+        'The current ditCraft configuration has this value:',
+        'The current ditCraft configuration has these values:',
       ),
 
       'The current MySQL configuration has these %d value(s):' => array(

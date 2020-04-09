@@ -46,7 +46,7 @@ final class PhabricatorStorageManagementUpgradeWorkflow
         phutil_console_wrap(
           pht(
             'Before running storage upgrades, you should take down the '.
-            'Phabricator web interface and stop any running Phabricator '.
+            'ditCraft web interface and stop any running ditCraft '.
             'daemons (you can disable this warning with %s).',
             '--force')));
 

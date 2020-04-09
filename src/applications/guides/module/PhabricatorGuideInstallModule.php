@@ -66,7 +66,7 @@ final class PhabricatorGuideInstallModule extends PhabricatorGuideModule {
       $icon_bg = 'bg-sky';
       $description = pht(
         'Authentication providers allow users to register accounts and '.
-        'log in to Phabricator.');
+        'log in to ditCraft.');
     }
 
     $item = id(new PhabricatorGuideItemView())
@@ -95,7 +95,7 @@ final class PhabricatorGuideInstallModule extends PhabricatorGuideModule {
       $icon = 'fa-sliders';
       $icon_bg = 'bg-sky';
       $description = pht(
-        'Learn how to configure mail and other options in Phabricator.');
+        'Learn how to configure mail and other options in ditCraft.');
     }
 
     $item = id(new PhabricatorGuideItemView())

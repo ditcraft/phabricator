@@ -72,7 +72,7 @@ abstract class PhabricatorObjectMailReceiver extends PhabricatorMailReceiver {
           MetaMTAReceivedMailStatus::STATUS_NO_PUBLIC_MAIL,
           pht(
             'This mail is addressed to the public email address of an object '.
-            '("%s"), but public replies are not enabled on this Phabricator '.
+            '("%s"), but public replies are not enabled on this ditCraft '.
             'install. An administrator may have recently disabled this '.
             'setting, or you may have replied to an old message. Try '.
             'replying to a more recent message instead.',

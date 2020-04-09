@@ -423,7 +423,7 @@ final class AphrontApplicationConfiguration
             pht(
               'Phabricator is configured to operate in cluster mode, but '.
               '%s is not defined in the request context. Your webserver '.
-              'configuration needs to forward %s to PHP so Phabricator can '.
+              'configuration needs to forward %s to PHP so ditCraft can '.
               'reject requests received on external interfaces.',
               'SERVER_ADDR',
               'SERVER_ADDR'));

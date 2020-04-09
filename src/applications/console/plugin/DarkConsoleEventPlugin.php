@@ -7,7 +7,7 @@ final class DarkConsoleEventPlugin extends DarkConsolePlugin {
   }
 
   public function getDescription() {
-    return pht('Information about Phabricator events and event listeners.');
+    return pht('Information about ditCraft events and event listeners.');
   }
 
   public function generateData() {

@@ -549,10 +549,10 @@ final class AphrontRequest extends Phobject {
       throw new AphrontMalformedRequestException(
         pht('Bad Host Header'),
         pht(
-          'This Phabricator install is configured as "%s", but you are '.
+          'This ditCraft install is configured as "%s", but you are '.
           'using the domain name "%s" to access a page which is trying to '.
-          'set a cookie. Access Phabricator on the configured primary '.
-          'domain or a configured alternate domain. Phabricator will not '.
+          'set a cookie. Access ditCraft on the configured primary '.
+          'domain or a configured alternate domain. ditCraft will not '.
           'set cookies on other domains for security reasons.',
           $configured_as,
           $accessed_as),
