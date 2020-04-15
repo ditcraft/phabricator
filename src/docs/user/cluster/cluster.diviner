@@ -147,7 +147,7 @@ Configuring multiple repository hosts is complex, but is required before you
 can add multiple daemon or web hosts.
 
 Repository replicas are important for availability if you host repositories
-on Phabricator, but less important if you host repositories elsewhere
+on ditCraft, but less important if you host repositories elsewhere
 (instead, you should focus on making that service more available).
 
 The distributed nature of Git and Mercurial tend to mean that they are

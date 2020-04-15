@@ -271,7 +271,7 @@ final class PhabricatorOAuthServerAuthController
         pht(
           'This application also requested additional unrecognized '.
           'permissions. These permissions may have existed in an older '.
-          'version of Phabricator, or may be from a future version of '.
+          'version of ditCraft, or may be from a future version of '.
           'ditCraft. They will not be granted.'));
 
       $unknown_form = id(new AphrontFormView())

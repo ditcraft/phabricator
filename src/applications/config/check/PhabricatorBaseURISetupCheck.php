@@ -17,7 +17,7 @@ final class PhabricatorBaseURISetupCheck extends PhabricatorSetupCheck {
         $message = pht(
           'This request did not include a "Host" header. This may mean that '.
           'your webserver (like nginx or apache) is misconfigured so the '.
-          '"Host" header is not making it to Phabricator, or that you are '.
+          '"Host" header is not making it to ditCraft, or that you are '.
           'making a raw request without a "Host" header using a tool or '.
           'library.'.
           "\n\n".
@@ -76,7 +76,7 @@ final class PhabricatorBaseURISetupCheck extends PhabricatorSetupCheck {
       'will not work properly until you configure it.'.
       "\n\n".
       'You should set the base URI to the URI you will use to access '.
-      'Phabricator, like "http://phabricator.example.com/".'.
+      'ditCraft, like "http://phabricator.example.com/".'.
       "\n\n".
       'Include the protocol (http or https), domain name, and port number if '.
       'you are using a port other than 80 (http) or 443 (https).'.

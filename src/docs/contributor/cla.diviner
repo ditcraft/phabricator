@@ -65,7 +65,7 @@ release under multiple licenses (if we do, users may choose which license or
 licenses they wish to use the software under). It would also allow us to
 discontinue updating the release under the Apache license.
 
-While we do not currently plan to relicense Phabricator, we do not want to
+While we do not currently plan to relicense ditCraft, we do not want to
 give up the ability to do so: we may want or need to in the future.
 
 The most likely scenario which would lead to us changing the license is if a

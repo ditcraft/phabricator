@@ -52,7 +52,7 @@ this:
   </VirtualHost>
 
 If Apache isn't currently configured to serve documents out of the directory
-where you put Phabricator, you may also need to add `<Directory />` section. The
+where you put ditCraft, you may also need to add `<Directory />` section. The
 syntax for this section depends on which version of Apache you're running.
 (If you don't know, you can usually figure this out by running `httpd -v`.)
 For Apache versions older than 2.4, use this:
@@ -182,7 +182,7 @@ example, if you are scripting the upgrade process).
 
   phabricator/ $ ./bin/storage upgrade --force
 
-NOTE: When you update Phabricator, run `storage upgrade` again to apply any
+NOTE: When you update ditCraft, run `storage upgrade` again to apply any
 new updates.
 
 = Next Steps =

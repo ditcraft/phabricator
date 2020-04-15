@@ -80,7 +80,7 @@ final class PhabricatorPeopleWelcomeMailEngine
     $use_passwords = PhabricatorPasswordAuthProvider::getPasswordProvider();
     if ($use_passwords) {
       $message[] = pht(
-        'To log in to Phabricator, follow this link and set a password:');
+        'To log in to ditCraft, follow this link and set a password:');
       $message[] = pht('  %s', $uri);
       $message[] = pht(
         'After you have set a password, you can log in to ditCraft in '.

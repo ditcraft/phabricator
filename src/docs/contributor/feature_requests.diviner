@@ -37,7 +37,7 @@ The rest of this article walks through these points in detail.
 If you have a bug report (not a feature request), see
 @{article:Contributing Bug Reports} for a more tailored guide.
 
-For general information on contributing to Phabricator, see
+For general information on contributing to ditCraft, see
 @{article:Contributor Introduction}.
 
 
@@ -121,7 +121,7 @@ We have a lot of users and a small team. Even if your feature is something we're
 interested in and a good fit for where we want the product to go, it may take
 us a long time to get around to building it.
 
-We work full time on Phabricator, and our long-term roadmap (which we call our
+We work full time on ditCraft, and our long-term roadmap (which we call our
 [[ https://secure.phabricator.com/w/starmap/ | Starmap ]]) has many years worth
 of work. Your feature request is competing against thousands of other requests
 for priority.

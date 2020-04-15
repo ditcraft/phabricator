@@ -77,7 +77,7 @@ similar agents of other rogue nations is beyond the scope of this document.
 Repository Hosts
 ================
 
-Repository hosts must run a complete, fully configured copy of Phabricator,
+Repository hosts must run a complete, fully configured copy of ditCraft,
 including a webserver. They must also run a properly configured `sshd`.
 
 If you are converting existing hosts into cluster hosts, you may need to

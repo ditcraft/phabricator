@@ -21,7 +21,7 @@ the most direct and powerful way to respond to events.
 
 = Installing Event Listeners (Phabricator) =
 
-To install event listeners in Phabricator, follow these steps:
+To install event listeners in ditCraft, follow these steps:
 
   - Write a listener class which extends @{class@libphutil:PhutilEventListener}.
   - Add it to a libphutil library, or create a new library (for instructions,

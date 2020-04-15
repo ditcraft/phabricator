@@ -49,7 +49,7 @@ final class DivinerMainController extends DivinerController {
     } else {
       $text = pht(
         "(NOTE) **Looking for ditCraft documentation?** ".
-        "If you're looking for help and information about Phabricator, ".
+        "If you're looking for help and information about ditCraft, ".
         "you can [[https://secure.phabricator.com/diviner/ | ".
         "browse the public ditCraft documentation]] on the live site.\n\n".
         "Diviner is the documentation generator used to build the ".

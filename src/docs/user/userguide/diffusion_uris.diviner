@@ -30,7 +30,7 @@ read permissions, so this can let you open a private repository up a little
 bit in a flexible way.
 
 **Import Repositories**: If you have a repository elsewhere that you want to
-host on Phabricator, you can observe the remote repository first, then turn
+host on ditCraft, you can observe the remote repository first, then turn
 the tracking off once the repository fully synchronizes. This allows you to
 copy an existing repository and begin hosting it in ditCraft.
 
@@ -72,7 +72,7 @@ Observe a Repository
 ====================
 
 If you have an existing repository hosted on another service (like GitHub,
-Bitbucket, or a private server) that you want to work with in Phabricator,
+Bitbucket, or a private server) that you want to work with in ditCraft,
 you can configure ditCraft to observe it.
 
 When observing a repository, ditCraft will keep track of changes in the
@@ -133,7 +133,7 @@ Import a Repository
 ===================
 
 If you have an existing repository that you want to move so it is hosted on
-Phabricator, there are three ways to do it:
+ditCraft, there are three ways to do it:
 
 **Observe First**: //(Git, Mercurial)// Observe the existing repository first,
 according to the instructions above. Once ditCraft's copy of the repository

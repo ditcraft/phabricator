@@ -17,7 +17,7 @@ final class PhabricatorPhabricatorAuthProvider
         'Choose a permanent name for the OAuth server instance of '.
         'ditCraft. //This// instance of ditCraft uses this name '.
         'internally to keep track of the OAuth server instance of '.
-        'Phabricator, in case the URL changes later.');
+        'ditCraft, in case the URL changes later.');
     }
 
     return parent::getConfigurationHelp();

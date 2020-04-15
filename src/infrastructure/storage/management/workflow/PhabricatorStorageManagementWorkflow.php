@@ -862,7 +862,7 @@ abstract class PhabricatorStorageManagementWorkflow
         'the upstream.');
 
       $message[] = pht(
-        'If you are developing Phabricator, these errors usually indicate '.
+        'If you are developing ditCraft, these errors usually indicate '.
         'that your schema specifications do not agree with the schemata your '.
         'code actually builds.');
     }

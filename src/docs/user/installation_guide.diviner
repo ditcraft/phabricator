@@ -8,7 +8,7 @@ Overview
 ========
 
 ditCraft is a LAMP (Linux, Apache, MySQL, PHP) application. To install
-Phabricator, you will need:
+ditCraft, you will need:
 
   - a normal computer to install it on (shared hosts and unusual environments
     are not supported) running some flavor of Linux or a similar OS;
@@ -82,7 +82,7 @@ install it to an entire domain or subdomain, like `phabricator.example.com`.
 Level Requirements
 ==================
 
-To install and administrate Phabricator, you'll need to be comfortable with
+To install and administrate ditCraft, you'll need to be comfortable with
 common system administration skills. For example, you should be familiar with
 using the command line, installing software on your operating system of choice,
 working with the filesystem, managing processes, dealing with permissions,

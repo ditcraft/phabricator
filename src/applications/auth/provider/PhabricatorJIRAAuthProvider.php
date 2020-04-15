@@ -169,7 +169,7 @@ final class PhabricatorJIRAAuthProvider
           "The PHP 'openssl' extension is not installed. You must install ".
           "this extension in order to add a JIRA authentication provider, ".
           "because JIRA OAuth requests use the RSA-SHA1 signing algorithm. ".
-          "Install the 'openssl' extension, restart Phabricator, and try ".
+          "Install the 'openssl' extension, restart ditCraft, and try ".
           "again."));
     }
 

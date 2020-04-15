@@ -432,7 +432,7 @@ final class DrydockLandRepositoryOperation
             'When this diff was generated, it was not pushed to staging for '.
             'an unknown reason (the status code was "%s"). Changes must be '.
             'pushed to staging before they can be landed from the web. '.
-            'The server may be running an out-of-date version of Phabricator, '.
+            'The server may be running an out-of-date version of ditCraft, '.
             'and updating may provide more information about this error.',
             $status),
         );

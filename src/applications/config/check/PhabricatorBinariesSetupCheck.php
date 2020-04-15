@@ -208,7 +208,7 @@ final class PhabricatorBinariesSetupCheck extends PhabricatorSetupCheck {
       'minimum and known-bad versions will be skipped, so we might fail '.
       'to detect an incompatible binary.'.
       "\n\n".
-      'You may be able to resolve this issue by updating Phabricator, since '.
+      'You may be able to resolve this issue by updating ditCraft, since '.
       'a newer version of ditCraft is likely to be able to parse the '.
       'newer version string.'.
       "\n\n".

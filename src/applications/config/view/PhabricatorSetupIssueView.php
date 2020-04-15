@@ -90,14 +90,14 @@ final class PhabricatorSetupIssueView extends AphrontView {
 
       $fallback_info = pht(
         "If those commands don't work, try Google. The process of installing ".
-        "PHP extensions is not specific to Phabricator, and any instructions ".
+        "PHP extensions is not specific to ditCraft, and any instructions ".
         "you can find for installing them on your system should work. On Mac ".
         "OS X, you might want to try Homebrew.");
 
       $restart_info = pht(
         'After installing new PHP extensions, <strong>restart ditCraft '.
         'for the changes to take effect</strong>. For help with restarting '.
-        'Phabricator, see %s in the documentation.',
+        'ditCraft, see %s in the documentation.',
         $this->renderRestartLink());
 
       $description[] = phutil_tag(
@@ -462,7 +462,7 @@ final class PhabricatorSetupIssueView extends AphrontView {
       pht(
         'After editing the PHP configuration, <strong>restart ditCraft for '.
         'the changes to take effect</strong>. For help with restarting '.
-        'Phabricator, see %s in the documentation.',
+        'ditCraft, see %s in the documentation.',
         $this->renderRestartLink()));
 
     return phutil_tag(

@@ -19,7 +19,7 @@ adjust the behavior. In general:
     activity. These intervals range from every 15 seconds (for active
     repositories) to every 6 hours (for repositories with no commits in two
     months).
-  - If you use `arc` to push commits, or you host repositories on Phabricator,
+  - If you use `arc` to push commits, or you host repositories on ditCraft,
     repositories automatically update after changes are pushed.
   - If you don't use `arc` and your repository is hosted elsewhere, this
     document describes ways you can make polling more responsive.
@@ -86,7 +86,7 @@ There are several ways to do this:
   - If you push changes with `arc land` or `arc commit`, this will be done
     for you automatically. These commits should normally be recognized within
     a few seconds.
-  - If your repository is hosted on Phabricator, this will also be done for you
+  - If your repository is hosted on ditCraft, this will also be done for you
     automatically.
   - You can schedule an update from the web interface, in Diffusion >
     (Choose a Repository) > Manage Repository > Status > Update Now.

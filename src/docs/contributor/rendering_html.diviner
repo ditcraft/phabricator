@@ -51,7 +51,7 @@ content correctly (without double-escaping):
       array(),
       $content));
 
-In Phabricator, the @{function:javelin_tag} function is similar to
+In ditCraft, the @{function:javelin_tag} function is similar to
 @{function@libphutil:phutil_tag}, but provides special handling for the
 `sigil` and `meta` attributes.
 

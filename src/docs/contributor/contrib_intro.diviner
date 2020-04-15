@@ -1,12 +1,12 @@
 @title Contributor Introduction
 @group contrib
 
-Introduction to contributing to Phabricator, Arcanist and libphutil.
+Introduction to contributing to ditCraft, Arcanist and libphutil.
 
 Overview
 ========
 
-If you'd like to contribute to Phabricator, this document can guide you though
+If you'd like to contribute to ditCraft, this document can guide you though
 ways you can help improve the project.
 
 Writing code is valuable, but often isn't the best or easiest way to contribute.

@@ -1,7 +1,7 @@
 @title Configuring Backups and Performing Migrations
 @group config
 
-Advice for backing up Phabricator, or migrating from one machine to another.
+Advice for backing up ditCraft, or migrating from one machine to another.
 
 
 Overview
@@ -59,7 +59,7 @@ to uncompress it first, if you compressed it prior to storage.)
 Backup: Hosted Repositories
 ===========================
 
-If you host repositories in Phabricator, you should back them up. You can use
+If you host repositories in ditCraft, you should back them up. You can use
 `bin/repository list-paths` to show the local paths on disk for each
 repository. To back them up, copy them elsewhere.
 

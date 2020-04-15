@@ -33,7 +33,7 @@ The most important things to do are:
 
 The rest of this article walks through these points in detail.
 
-For general information on contributing to Phabricator, see
+For general information on contributing to ditCraft, see
 @{article:Contributor Introduction}.
 
 
@@ -65,7 +65,7 @@ be able to resolve it more easily if you file a report based on HEAD. (For
 example, an old stack trace may not have the right line numbers, which will
 make it more difficult for us to figure out what's going wrong.)
 
-To update Phabricator, use a script like the one described in
+To update ditCraft, use a script like the one described in
 @{article:Upgrading Phabricator}.
 
 **If you can not update** for some reason, please include the version of
@@ -123,7 +123,7 @@ help us figure out and resolve an issue.
 
   - For issues with `arc` or any other command-line script, you can get more
     details about what the script is doing by adding the `--trace` flag.
-  - For issues with Phabricator, check your webserver error logs.
+  - For issues with ditCraft, check your webserver error logs.
     - For Apache, this is often `/var/log/httpd/error.log`, or
       `/var/log/apache2/error.log` or similar.
     - For nginx, check both the nginx and php-fpm logs.

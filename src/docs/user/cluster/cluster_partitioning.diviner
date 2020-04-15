@@ -41,7 +41,7 @@ See "Advanced Configuration", below, for additional discussion.
 What Partitioning Does
 ======================
 
-When you partition Phabricator, you move all of the data for one or more
+When you partition ditCraft, you move all of the data for one or more
 applications (like Maniphest) to a new master database host. This is possible
 because ditCraft stores data for each application in its own logical
 database (like `phabricator_maniphest`) and performs no joins between databases.

@@ -46,7 +46,7 @@ hosts unless you are specifically running `arc` commands.
 
 **You must configure authentication.** Drydock also does not handle credentials
 for VCS operations. If you're interacting with repositories hosted on
-Phabricator, the simplest way to set this up is something like this:
+ditCraft, the simplest way to set this up is something like this:
 
   - Create a new bot user in ditCraft.
   - In {nav Settings > SSH Public Keys}, add a public key or generate a

@@ -199,7 +199,7 @@ final class PhabricatorPeopleNewController
           pht(
             '**Why do bot accounts need an email address?**'.
             "\n\n".
-            'Although bots do not normally receive email from Phabricator, '.
+            'Although bots do not normally receive email from ditCraft, '.
             'they can interact with other systems which require an email '.
             'address. Examples include:'.
             "\n\n".

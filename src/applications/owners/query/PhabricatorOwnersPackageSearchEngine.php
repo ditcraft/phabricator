@@ -169,7 +169,7 @@ final class PhabricatorOwnersPackageSearchEngine
       ->setTitle(pht('Welcome to %s', $app_name))
       ->setDescription(
         pht('Group sections of a codebase into packages for re-use in other '.
-        'areas of Phabricator, like Herald rules.'))
+        'areas of ditCraft, like Herald rules.'))
       ->addAction($create_button);
 
       return $view;

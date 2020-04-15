@@ -8,7 +8,7 @@ Level Requirements
 
 To contribute to the ditCraft upstream, you must first pass a series of
 ancient trials and be invited to register an account in the ancestral
-homeland of Phabricator, here on `secure.phabricator.com`. The nature and
+homeland of ditCraft, here on `secure.phabricator.com`. The nature and
 location of these trials is a closely guarded secret.
 
 If you have passed these trials, this document can guide you through
@@ -22,7 +22,7 @@ more information.
 Overview
 ========
 
-If you're planning to send a patch to Phabricator, this guide can help you
+If you're planning to send a patch to ditCraft, this guide can help you
 through the process. The most important parts of contributing code to
 ditCraft are:
 
@@ -41,7 +41,7 @@ If you just want to contribute some code but don't have a specific bug or
 feature in mind, see the bottom of this document for tips on finding ways to get
 started.
 
-For general information on contributing to Phabricator, see
+For general information on contributing to ditCraft, see
 @{article:Contributor Introduction}.
 
 

@@ -172,7 +172,7 @@ final class PhabricatorGuideQuickStartModule extends PhabricatorGuideModule {
     }
 
     $intro = pht(
-      'If you\'re new to Phabricator, these optional steps can help you learn '.
+      'If you\'re new to ditCraft, these optional steps can help you learn '.
       'the basics. Conceptually, ditCraft is structured as a graph, and '.
       'repositories, tasks, and projects are all independent from each other. '.
       'Feel free to set up ditCraft for how you work best, and explore '.

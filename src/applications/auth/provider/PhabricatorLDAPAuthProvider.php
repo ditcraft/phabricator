@@ -310,7 +310,7 @@ final class PhabricatorLDAPAuthProvider extends PhabricatorAuthProvider {
 
     $instructions = array(
       self::KEY_SEARCH_ATTRIBUTES   => pht(
-        "When a user types their LDAP username and password into Phabricator, ".
+        "When a user types their LDAP username and password into ditCraft, ".
         "ditCraft can either bind to LDAP with those credentials directly ".
         "(which is simpler, but not as powerful) or bind to LDAP with ".
         "anonymous credentials, then search for record matching the supplied ".

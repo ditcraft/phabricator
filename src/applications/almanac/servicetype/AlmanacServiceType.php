@@ -42,7 +42,7 @@ abstract class AlmanacServiceType extends Phobject {
   /**
    * Return `true` if this service type is a ditCraft cluster service type.
    *
-   * These special services change the behavior of Phabricator, and require
+   * These special services change the behavior of ditCraft, and require
    * elevated permission to create and edit.
    *
    * @return bool True if this is a ditCraft cluster service type.

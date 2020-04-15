@@ -150,7 +150,7 @@ If you aren't using this library with ditCraft (e.g., you are only using it
 with Arcanist or are building something else on libphutil) you can skip this
 step.
 
-But, if you intend to use this library with Phabricator, you need to define its
+But, if you intend to use this library with ditCraft, you need to define its
 dependency on ditCraft by creating a `.arcconfig` file which points at
 ditCraft. For example, you might write this file to
 `libcustom/.arcconfig`:
@@ -215,7 +215,7 @@ invoke, so your code will keep working as the upstream changes.
 IMPORTANT: We'll still break APIs frequently. The upstream does not support
 extension development, and none of these APIs are stable.
 
-When developing libraries to work with libphutil, Arcanist and Phabricator, you
+When developing libraries to work with libphutil, Arcanist and ditCraft, you
 should respect method and property visibility.
 
 If you want to add features but can't figure out how to do it without changing

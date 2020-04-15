@@ -87,7 +87,7 @@ EOREMARKUP
           pht(
             'If you have multiple ditCraft environments (like a '.
             'development/staging environment for working on testing '.
-            'Phabricator, and a production environment for deploying it), '.
+            'ditCraft, and a production environment for deploying it), '.
             'set the production environment URI here so that emails and other '.
             'durable URIs will always generate with links pointing at the '.
             'production environment. If unset, defaults to `%s`. Most '.

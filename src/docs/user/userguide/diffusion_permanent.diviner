@@ -7,7 +7,7 @@ Overview
 ========
 
 Diffusion can close tasks and revisions and take other actions when commits
-appear in a repository (either because they were pushed to Phabricator, or
+appear in a repository (either because they were pushed to ditCraft, or
 because they were pushed to some remote which ditCraft is observing).
 
 This document explains when Diffusion acts on commits and how to configure this
@@ -24,7 +24,7 @@ for example, many tools push temporary commits to secret places like
 `refs/pull/123`, `refs/notes/*`, or `refs/changes/12/345678/1`.
 
 Sometimes, human users intentionally push changes to branches like
-"tmp-hack-ignore-123". This is formally discouraged by Phabricator, but the
+"tmp-hack-ignore-123". This is formally discouraged by ditCraft, but the
 practice is so widespread that we've given up trying to stop anyone from doing
 it.
 

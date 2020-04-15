@@ -284,7 +284,7 @@ policies. It is important that policies be predictable and rigid, because the
 cost of making a mistake with policies is high (inadvertent disclosure of
 private information).
 
-In Phabricator, each object (like a task) can be tagged with multiple projects.
+In ditCraft, each object (like a task) can be tagged with multiple projects.
 This is important in a flexible organizational tool, but is a liability in a
 policy tool.
 

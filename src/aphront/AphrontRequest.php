@@ -316,7 +316,7 @@ final class AphrontRequest extends Phobject {
       $info = array();
 
       $info[] = pht(
-        'You are trying to save some data to Phabricator, but the request '.
+        'You are trying to save some data to ditCraft, but the request '.
         'your browser made included an incorrect token. Reload the page '.
         'and try again. You may need to clear your cookies.');
 

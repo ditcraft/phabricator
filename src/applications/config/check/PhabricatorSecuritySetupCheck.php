@@ -31,7 +31,7 @@ final class PhabricatorSecuritySetupCheck extends PhabricatorSetupCheck {
         "\n\n".
         'Upgrade %s to a patched version.'.
         "\n\n".
-        'To learn more about how this issue affects Phabricator, see %s.',
+        'To learn more about how this issue affects ditCraft, see %s.',
         phutil_tag('tt', array(), 'bash'),
         phutil_tag('tt', array(), 'bash'),
         phutil_tag(

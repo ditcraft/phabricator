@@ -37,7 +37,7 @@ final class PhabricatorApplicationEmailCommandsController
     $content[] = pht(
       'After configuring ditCraft to process inbound mail, you can '.
       'interact with objects (like tasks and revisions) over email. For '.
-      'information on configuring Phabricator, see '.
+      'information on configuring ditCraft, see '.
       '**[[ %s | Configuring Inbound Email ]]**.'.
       "\n\n".
       'In most cases, you can reply to email you receive from ditCraft '.

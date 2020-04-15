@@ -36,7 +36,7 @@ identifying the corporation they are signing on behalf of) or **No One** (for
 policy documents or other documents which do not require a signature).
 
 **Require Signature** This field allows you to create a document which all of
-your users must sign before they can use Phabricator, like a terms of service
+your users must sign before they can use ditCraft, like a terms of service
 document. See "Use Case: Terms of Service" below for details. These documents
 must be signable by individuals.
 

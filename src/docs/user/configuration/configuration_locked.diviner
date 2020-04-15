@@ -117,7 +117,7 @@ Locked Configuration With Database Values
 You may receive a setup issue warning you that a locked configuration key has a
 value set in the database. Most commonly, this is because:
 
-  - In some earlier version of Phabricator, this configuration was not locked.
+  - In some earlier version of ditCraft, this configuration was not locked.
   - In the past, you or some other administrator used the web UI to set a
     value. This value was written to the database.
   - In a later version of the software, the value became locked.

@@ -5,7 +5,7 @@ Detailed instructions for troubleshooting HTTPS connection problems.
 
 = Overview =
 
-If you're having trouble connecting to an HTTPS install of Phabricator, and
+If you're having trouble connecting to an HTTPS install of ditCraft, and
 particularly if you're receiving a "There was an error negotiating the SSL
 connection." error, this document may be able to help you diagnose and resolve
 the problem.

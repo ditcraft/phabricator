@@ -31,7 +31,7 @@ TextMate installs a `txmt://` handler by default, so it's easy to configure
 this feature if you use TextMate.
 
 First, create a local directory with symlinks for each repository callsign. For
-example, if you're developing Phabricator, it might look like this:
+example, if you're developing ditCraft, it might look like this:
 
   /Users/alincoln/editor_links/ $ ls -l
   ... ARC -> /Users/alincoln/workspace/arcanist/

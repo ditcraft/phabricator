@@ -6,7 +6,7 @@ Describes how to provide reproduction steps.
 Overview
 ========
 
-When you submit a bug report about Phabricator, you **MUST** include
+When you submit a bug report about ditCraft, you **MUST** include
 reproduction steps. We can not help you with bugs we can not reproduce, and
 will not accept reports which omit reproduction steps or have incomplete or
 insufficient instructions.
