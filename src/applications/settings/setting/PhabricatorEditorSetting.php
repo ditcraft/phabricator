@@ -20,7 +20,7 @@ final class PhabricatorEditorSetting
   protected function getControlInstructions() {
     return pht(
       "Many text editors can be configured as URI handlers for special ".
-      "protocols like `editor://`. If you have such an editor, Phabricator ".
+      "protocols like `editor://`. If you have such an editor, ditCraft ".
       "can generate links that you can click to open files locally.".
       "\n\n".
       "These special variables are supported:".

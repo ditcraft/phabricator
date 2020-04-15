@@ -40,7 +40,7 @@ final class PhabricatorPeopleUsernameMailEngine
     $body = sprintf(
       "%s\n\n  %s\n  %s\n",
       pht(
-        '%s (%s) has changed your Phabricator username.',
+        '%s (%s) has changed your ditCraft username.',
         $sender_username,
         $sender_realname),
       pht(
@@ -51,7 +51,7 @@ final class PhabricatorPeopleUsernameMailEngine
         $new_username));
 
     return id(new PhabricatorMetaMTAMail())
-      ->setSubject(pht('[Phabricator] Username Changed'))
+      ->setSubject(pht('[ditCraft] Username Changed'))
       ->setBody($body);
   }
 

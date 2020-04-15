@@ -90,10 +90,10 @@ final class PhabricatorFacebookAuthProvider
             pht(
               "%s ".
               "Require users to enable 'secure browsing' on Facebook in order ".
-              "to use Facebook to authenticate with Phabricator. This ".
+              "to use Facebook to authenticate with ditCraft. This ".
               "improves security by preventing an attacker from capturing ".
               "an insecure Facebook session and escalating it into a ".
-              "Phabricator session. Enabling it is recommended.",
+              "ditCraft session. Enabling it is recommended.",
               phutil_tag('strong', array(), pht('Require Secure Browsing:')))));
   }
 

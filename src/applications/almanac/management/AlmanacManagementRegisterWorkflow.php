@@ -148,7 +148,7 @@ final class AlmanacManagementRegisterWorkflow
       throw new PhutilArgumentUsageException(
         pht(
           'The public key corresponding to the given private key is not '.
-          'yet known to Phabricator. Associate the public key with an '.
+          'yet known to ditCraft. Associate the public key with an '.
           'Almanac device in the web interface before registering hosts '.
           'with it.'));
     }

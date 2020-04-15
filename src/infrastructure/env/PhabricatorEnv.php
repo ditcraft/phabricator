@@ -9,7 +9,7 @@
  * = Reading Configuration =
  *
  * The primary role of this class is to provide an API for reading
- * Phabricator configuration, @{method:getEnvConfig}:
+ * ditCraft configuration, @{method:getEnvConfig}:
  *
  *   $value = PhabricatorEnv::getEnvConfig('some.key', $default);
  *
@@ -94,7 +94,7 @@ final class PhabricatorEnv extends Phobject {
     self::resetUmask();
     self::buildConfigurationSourceStack($config_optional);
 
-    // Force a valid timezone. If both PHP and Phabricator configuration are
+    // Force a valid timezone. If both PHP and ditCraft configuration are
     // invalid, use UTC.
     $tz = self::getEnvConfig('phabricator.timezone');
     if ($tz) {
@@ -562,17 +562,17 @@ final class PhabricatorEnv extends Phobject {
     switch ($reason) {
       case self::READONLY_MASTERLESS:
         return pht(
-          'Phabricator is in read-only mode (no writable database '.
+          'ditCraft is in read-only mode (no writable database '.
           'is configured).');
       case self::READONLY_UNREACHABLE:
         return pht(
-          'Phabricator is in read-only mode (unreachable master).');
+          'ditCraft is in read-only mode (unreachable master).');
       case self::READONLY_SEVERED:
         return pht(
-          'Phabricator is in read-only mode (major interruption).');
+          'ditCraft is in read-only mode (major interruption).');
     }
 
-    return pht('Phabricator is in read-only mode.');
+    return pht('ditCraft is in read-only mode.');
   }
 
   public static function getReadOnlyURI() {
@@ -892,7 +892,7 @@ final class PhabricatorEnv extends Phobject {
     if (!$cluster_addresses) {
       throw new Exception(
         pht(
-          'Phabricator is not configured to serve cluster requests. '.
+          'ditCraft is not configured to serve cluster requests. '.
           'Set `cluster.addresses` in the configuration to whitelist '.
           'cluster hosts before sending requests that use a cluster '.
           'authentication mechanism.'));
@@ -981,7 +981,7 @@ final class PhabricatorEnv extends Phobject {
 
   /**
    * Get the path to an empty directory which is readable by all of the system
-   * user accounts that Phabricator acts as.
+   * user accounts that ditCraft acts as.
    *
    * In some cases, a binary needs some valid HOME or CWD to continue, but not
    * all user accounts have valid home directories and even if they do they

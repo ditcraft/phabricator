@@ -35,7 +35,7 @@ abstract class DoorkeeperFeedWorker extends FeedPushWorker {
 
   /**
    * Enable or disable the worker. Normally, this checks configuration to
-   * see if Phabricator is linked to applicable external systems.
+   * see if ditCraft is linked to applicable external systems.
    *
    * @return bool True if this worker should try to publish stories.
    * @task publish
@@ -158,7 +158,7 @@ abstract class DoorkeeperFeedWorker extends FeedPushWorker {
    */
   final protected function doWork() {
     if (PhabricatorEnv::getEnvConfig('phabricator.silent')) {
-      $this->log("%s\n", pht('Phabricator is running in silent mode.'));
+      $this->log("%s\n", pht('ditCraft is running in silent mode.'));
       return;
     }
 

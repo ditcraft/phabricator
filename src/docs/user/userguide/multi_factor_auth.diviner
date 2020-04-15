@@ -1,7 +1,7 @@
 @title User Guide: Multi-Factor Authentication
 @group userguide
 
-Explains how multi-factor authentication works in Phabricator.
+Explains how multi-factor authentication works in ditCraft.
 
 Overview
 ========
@@ -30,11 +30,11 @@ you'll be stopped and asked to enter additional credentials.
 Usually, this means you'll receive an SMS with a authorization code on your
 phone, or you'll open an app on your phone which will show you a authorization
 code or ask you to confirm the action. If you're given a authorization code,
-you'll enter it into Phabricator.
+you'll enter it into ditCraft.
 
-If you're logging in, Phabricator will log you in after you enter the code.
+If you're logging in, ditCraft will log you in after you enter the code.
 
-If you're taking a sensitive action, Phabricator will sometimes put your
+If you're taking a sensitive action, ditCraft will sometimes put your
 account in "high security" mode for a few minutes. In this mode, you can take
 sensitive actions like changing passwords or SSH keys freely, without
 entering any more credentials.
@@ -64,7 +64,7 @@ Factor: Mobile Phone App (TOTP)
 ===============================
 
 TOTP stands for "Time-based One-Time Password". This factor operates by having
-you enter authorization codes from your mobile phone into Phabricator. The codes
+you enter authorization codes from your mobile phone into ditCraft. The codes
 change every 30 seconds, so you will need to have your phone with you in order
 to enter them.
 
@@ -80,13 +80,13 @@ TOTP application should work properly.
 After you've downloaded the application onto your phone, use the Phabricator
 settings panel to add a factor to your account. You'll be prompted to scan a
 QR code, and then read an authorization code from your phone and type it into
-Phabricator.
+ditCraft.
 
 Later, when you need to authenticate, you'll follow this same process: launch
-the application, read the authorization code, and type it into Phabricator.
+the application, read the authorization code, and type it into ditCraft.
 This will prove you have your phone.
 
-Don't lose your phone! You'll need it to log into Phabricator in the future.
+Don't lose your phone! You'll need it to log into ditCraft in the future.
 
 
 Factor: SMS
@@ -123,7 +123,7 @@ to take a sensitive action, you'll be asked to confirm it in the application.
 Administration: Configuration
 =============================
 
-New Phabricator installs start without any multi-factor providers enabled.
+New ditCraft installs start without any multi-factor providers enabled.
 Users won't be able to add new factors until you set up multi-factor
 authentication by configuring at least one provider.
 

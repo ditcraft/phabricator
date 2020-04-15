@@ -23,7 +23,7 @@ final class PhabricatorTranslationSetting
 
   protected function getControlInstructions() {
     return pht(
-      'Choose which language you would like the Phabricator UI to use.');
+      'Choose which language you would like the ditCraft UI to use.');
   }
 
   public function assertValidValue($value) {
@@ -90,7 +90,7 @@ final class PhabricatorTranslationSetting
       unset($groups['silly']);
     }
 
-    // Omit limited and test translations if Phabricator is not in developer
+    // Omit limited and test translations if ditCraft is not in developer
     // mode.
     $is_dev = PhabricatorEnv::getEnvConfig('phabricator.developer-mode');
     if (!$is_dev) {

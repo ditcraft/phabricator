@@ -72,7 +72,7 @@ function phabricator_form(PhabricatorUser $user, $attributes, $content) {
     // we can construct these for download links, depending on configuration.
 
     // These forms do not receive CSRF tokens, even though they safely could.
-    // This can be confusing, if you're developing for Phabricator and
+    // This can be confusing, if you're developing for ditCraft and
     // manage to construct a local form with a fully-qualified URI, since it
     // won't get CSRF tokens and you'll get an exception at the other end of
     // the request which is a bit disconnected from the actual root cause.

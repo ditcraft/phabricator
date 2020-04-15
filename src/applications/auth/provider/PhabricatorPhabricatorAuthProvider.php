@@ -13,9 +13,9 @@ final class PhabricatorPhabricatorAuthProvider
   public function getConfigurationHelp() {
     if ($this->isCreate()) {
       return pht(
-        "**Step 1 of 2 - Name Phabricator OAuth Instance**\n\n".
+        "**Step 1 of 2 - Name ditCraft OAuth Instance**\n\n".
         'Choose a permanent name for the OAuth server instance of '.
-        'Phabricator. //This// instance of Phabricator uses this name '.
+        'ditCraft. //This// instance of ditCraft uses this name '.
         'internally to keep track of the OAuth server instance of '.
         'Phabricator, in case the URL changes later.');
     }
@@ -29,8 +29,8 @@ final class PhabricatorPhabricatorAuthProvider
     $login_uri = PhabricatorEnv::getURI($this->getLoginURI());
 
     return pht(
-      "**Step 2 of 2 - Configure Phabricator OAuth Instance**\n\n".
-      "To configure Phabricator OAuth, create a new application here:".
+      "**Step 2 of 2 - Configure ditCraft OAuth Instance**\n\n".
+      "To configure ditCraft OAuth, create a new application here:".
       "\n\n".
       "%s/oauthserver/client/create/".
       "\n\n".
@@ -106,23 +106,23 @@ final class PhabricatorPhabricatorAuthProvider
     $key_uri = self::PROPERTY_PHABRICATOR_URI;
 
     if (!strlen($values[$key_name])) {
-      $errors[] = pht('Phabricator instance name is required.');
+      $errors[] = pht('ditCraft instance name is required.');
       $issues[$key_name] = pht('Required');
     } else if (!preg_match('/^[a-z0-9.]+\z/', $values[$key_name])) {
       $errors[] = pht(
-        'Phabricator instance name must contain only lowercase letters, '.
+        'ditCraft instance name must contain only lowercase letters, '.
         'digits, and periods.');
       $issues[$key_name] = pht('Invalid');
     }
 
     if (!strlen($values[$key_uri])) {
-      $errors[] = pht('Phabricator base URI is required.');
+      $errors[] = pht('ditCraft base URI is required.');
       $issues[$key_uri] = pht('Required');
     } else {
       $uri = new PhutilURI($values[$key_uri]);
       if (!$uri->getProtocol()) {
         $errors[] = pht(
-          'Phabricator base URI should include protocol (like "%s").',
+          'ditCraft base URI should include protocol (like "%s").',
           'https://');
         $issues[$key_uri] = pht('Invalid');
       }
@@ -161,7 +161,7 @@ final class PhabricatorPhabricatorAuthProvider
       $form
        ->appendChild(
           id(new AphrontFormTextControl())
-            ->setLabel(pht('Phabricator Instance Name'))
+            ->setLabel(pht('ditCraft Instance Name'))
             ->setValue($v_name)
             ->setName(self::PROPERTY_PHABRICATOR_NAME)
             ->setError($e_name)
@@ -175,19 +175,19 @@ final class PhabricatorPhabricatorAuthProvider
       $form
         ->appendChild(
           id(new AphrontFormStaticControl())
-            ->setLabel(pht('Phabricator Instance Name'))
+            ->setLabel(pht('ditCraft Instance Name'))
             ->setValue($v_name));
     }
 
     $form
       ->appendChild(
         id(new AphrontFormTextControl())
-          ->setLabel(pht('Phabricator Base URI'))
+          ->setLabel(pht('ditCraft Base URI'))
           ->setValue($v_uri)
           ->setName(self::PROPERTY_PHABRICATOR_URI)
           ->setCaption(
             pht(
-              'The URI where the OAuth server instance of Phabricator is '.
+              'The URI where the OAuth server instance of ditCraft is '.
               'installed. For example: %s',
               phutil_tag('tt', array(), 'https://phabricator.mycompany.com/')))
           ->setError($e_uri));

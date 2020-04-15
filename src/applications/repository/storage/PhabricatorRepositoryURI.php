@@ -362,7 +362,7 @@ final class PhabricatorRepositoryURI
       return PhabricatorEnv::getEnvConfig('diffusion.ssh-port');
     }
 
-    // If Phabricator is running on a nonstandard port, use that as the default
+    // If ditCraft is running on a nonstandard port, use that as the default
     // port for URIs with the same protocol.
 
     $is_http = ($protocol == self::BUILTIN_PROTOCOL_HTTP);
@@ -498,7 +498,7 @@ final class PhabricatorRepositoryURI
         'color' => 'green',
         'label' => pht('Observe'),
         'note' => pht(
-          'Phabricator will observe changes to this URI and copy them.'),
+          'ditCraft will observe changes to this URI and copy them.'),
         'short' => pht('Copy from a remote.'),
       ),
       self::IO_MIRROR => array(
@@ -506,7 +506,7 @@ final class PhabricatorRepositoryURI
         'color' => 'green',
         'label' => pht('Mirror'),
         'note' => pht(
-          'Phabricator will push a copy of any changes to this URI.'),
+          'ditCraft will push a copy of any changes to this URI.'),
         'short' => pht('Push a copy to a remote.'),
       ),
       self::IO_NONE => array(
@@ -514,7 +514,7 @@ final class PhabricatorRepositoryURI
         'color' => 'grey',
         'label' => pht('No I/O'),
         'note' => pht(
-          'Phabricator will not push or pull any changes to this URI.'),
+          'ditCraft will not push or pull any changes to this URI.'),
         'short' => pht('Do not perform any I/O.'),
       ),
       self::IO_READ => array(
@@ -522,7 +522,7 @@ final class PhabricatorRepositoryURI
         'color' => 'blue',
         'label' => pht('Read Only'),
         'note' => pht(
-          'Phabricator will serve a read-only copy of the repository from '.
+          'ditCraft will serve a read-only copy of the repository from '.
           'this URI.'),
         'short' => pht('Serve repository in read-only mode.'),
       ),
@@ -531,7 +531,7 @@ final class PhabricatorRepositoryURI
         'color' => 'blue',
         'label' => pht('Read/Write'),
         'note' => pht(
-          'Phabricator will serve a read/write copy of the repository from '.
+          'ditCraft will serve a read/write copy of the repository from '.
           'this URI.'),
         'short' => pht('Serve repository in read/write mode.'),
       ),

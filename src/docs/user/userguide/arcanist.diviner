@@ -1,9 +1,9 @@
 @title Arcanist User Guide
 @group userguide
 
-Guide to Arcanist, a command-line interface to Phabricator.
+Guide to Arcanist, a command-line interface to ditCraft.
 
-Arcanist provides command-line access to many Phabricator tools (like
+Arcanist provides command-line access to many ditCraft tools (like
 Differential, Files, and Paste), integrates with static analysis ("lint") and
 unit tests, and manages common workflows like getting changes into Differential
 for review.

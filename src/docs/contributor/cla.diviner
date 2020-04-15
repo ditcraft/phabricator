@@ -81,10 +81,10 @@ might want to do this so that our license is compatible with the licenses used
 by other software we want to be distributed alongside.
 
 Although we currently believe it is unlikely, it is also possible we may want
-to relicense Phabricator under a closed, proprietary, or literally evil license.
+to relicense ditCraft under a closed, proprietary, or literally evil license.
 By signing the CLA, you are giving us the power to do this without requiring
 you to consent. If you are not comfortable with this, do not sign the CLA and
-do not contribute to Phabricator.
+do not contribute to ditCraft.
 
 **Limitation of Liability**: The second benefit the CLA provides is that it
 makes the terms of your contribution explicitly clear upfront, and it puts us
@@ -104,7 +104,7 @@ contribution explicit upfront.
 
 Generally, we believe the terms of the CLA are fair and reasonable for
 contributors, and that the primary way contributors benefit from contributing
-to Phabricator is that we publish and maintain their changes so they do not
+to ditCraft is that we publish and maintain their changes so they do not
 have to fork the software.
 
 If you have strong ideological reasons for contributing to open source, you may

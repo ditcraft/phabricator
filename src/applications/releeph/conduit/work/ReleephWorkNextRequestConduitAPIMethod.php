@@ -76,7 +76,7 @@ final class ReleephWorkNextRequestConduitAPIMethod
 
     /**
      * Sort both needs_pick and needs_revert in ascending commit order, as
-     * discovered by Phabricator (using the `id` column to perform that
+     * discovered by ditCraft (using the `id` column to perform that
      * ordering).
      *
      * This is easy for $needs_pick as the ordinal is stored. It is hard for

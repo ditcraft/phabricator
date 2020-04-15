@@ -38,7 +38,7 @@ final class PhabricatorApplicationUninstallController
         ->appendChild(
           pht(
             'To manage prototypes, enable them by setting %s in your '.
-            'Phabricator configuration.',
+            'ditCraft configuration.',
             phutil_tag('tt', array(), 'phabricator.show-prototypes')));
       return id(new AphrontDialogResponse())->setDialog($dialog);
     }
@@ -98,9 +98,9 @@ final class PhabricatorApplicationUninstallController
             ->appendParagraph(
               pht(
                 'This is very unusual and will leave you without any '.
-                'content on the Phabricator home page. You should only '.
+                'content on the ditCraft home page. You should only '.
                 'do this if you are certain you know what you are doing.'))
-            ->addSubmitButton(pht('Completely Break Phabricator'));
+            ->addSubmitButton(pht('Completely Break ditCraft'));
         } else {
           $dialog
             ->appendParagraph(
@@ -115,7 +115,7 @@ final class PhabricatorApplicationUninstallController
           ->appendChild(
             pht(
               'This application cannot be uninstalled, '.
-              'because it is required for Phabricator to work.'));
+              'because it is required for ditCraft to work.'));
       }
     }
     return id(new AphrontDialogResponse())->setDialog($dialog);

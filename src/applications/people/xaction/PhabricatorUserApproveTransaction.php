@@ -22,13 +22,13 @@ final class PhabricatorUserApproveTransaction
 
     $actor = $this->getActor();
     $title = pht(
-      'Phabricator Account "%s" Approved',
+      'ditCraft Account "%s" Approved',
       $user->getUsername());
 
     $body = sprintf(
       "%s\n\n  %s\n\n",
       pht(
-        'Your Phabricator account (%s) has been approved by %s. You can '.
+        'Your ditCraft account (%s) has been approved by %s. You can '.
         'login here:',
         $user->getUsername(),
         $actor->getUsername()),
@@ -37,7 +37,7 @@ final class PhabricatorUserApproveTransaction
     $mail = id(new PhabricatorMetaMTAMail())
       ->addTos(array($user->getPHID()))
       ->addCCs(array($actor->getPHID()))
-      ->setSubject('[Phabricator] '.$title)
+      ->setSubject('[ditCraft] '.$title)
       ->setForceDelivery(true)
       ->setBody($body)
       ->saveAndSend();

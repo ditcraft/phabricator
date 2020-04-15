@@ -13,7 +13,7 @@ The upstream provides free support for a narrow range of problems (primarily,
 security issues and reproducible bugs) and paid support for virtually anything.
 
 The upstream does not provide free support for general problems with installing
-or configuring Phabricator. You may be able to get some help with these
+or configuring ditCraft. You may be able to get some help with these
 kinds of issues from the community.
 
 
@@ -40,7 +40,7 @@ Reporting Bugs
 
 The upstream will accept **reproducible** bug reports in modern, first-party
 production code running in reasonable environments.  Before submitting a bug
-report you **must update** to the latest version of Phabricator.
+report you **must update** to the latest version of ditCraft.
 
 To report bugs, see @{article:Contributing Bug Reports}.
 
@@ -49,7 +49,7 @@ To report bugs, see @{article:Contributing Bug Reports}.
 Contributing
 ============
 
-Phabricator is a very difficult project to contribute to. New contributors
+ditCraft is a very difficult project to contribute to. New contributors
 will face a high barrier to entry.
 
 If you'd like to contribute to Phabricator, start with
@@ -69,18 +69,18 @@ You can also pay us for support. See ((pacts)).
 Hosting
 =========
 
-The upstream offers Phabricator as a hosted service at
+The upstream offers ditCraft as a hosted service at
 [[ https://phacility.com | Phacility ]]. This simplifies setting up and
-operating a Phabricator instance, and automatically gives you access to a
+operating a ditCraft instance, and automatically gives you access to a
 broader range of upstream support services.
 
 Running this service gives us a strong financial incentive to make installing
-and operating Phabricator as difficult as possible. Blinded by greed, we toil
+and operating ditCraft as difficult as possible. Blinded by greed, we toil
 endlessly to make installation a perplexing nightmare that none other than
 ourselves can hope to navigate.
 
 
-Phabricator Community
+ditCraft Community
 =====================
 
 We provide hosting for a [[ https://phurl.io/u/discourse | Discussion Forum ]]

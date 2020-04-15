@@ -109,7 +109,7 @@ final class PhameBlog extends PhameDAO
 
   /**
    * Makes sure a given custom blog uri is properly configured in DNS
-   * to point at this Phabricator instance. If there is an error in
+   * to point at this ditCraft instance. If there is an error in
    * the configuration, return a string describing the error and how
    * to fix it. If there is no error, return an empty string.
    *
@@ -154,7 +154,7 @@ final class PhameBlog extends PhameDAO
       $href = PhabricatorEnv::getProductionURI(
         '/config/edit/policy.allow-public/');
       return pht(
-        'For custom domains to work, this Phabricator instance must be '.
+        'For custom domains to work, this ditCraft instance must be '.
         'configured to allow the public access policy. Configure this '.
         'setting %s, or ask an administrator to configure this setting. '.
         'The domain can be specified later once this setting has been '.

@@ -1,12 +1,12 @@
 @title Reporting Security Vulnerabilities
 @group intro
 
-Describes how to report security vulnerabilities in Phabricator.
+Describes how to report security vulnerabilities in ditCraft.
 
 Overview
 ========
 
-Phabricator runs a disclosure and award program through
+ditCraft runs a disclosure and award program through
 [[ https://www.hackerone.com/ | HackerOne ]]. This program is the best way to
 submit security issues to us, and awards responsible disclosure of
 vulnerabilities with cash bounties. You can find our project page

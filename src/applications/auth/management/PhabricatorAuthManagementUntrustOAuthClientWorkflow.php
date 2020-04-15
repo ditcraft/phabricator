@@ -9,7 +9,7 @@ final class PhabricatorAuthManagementUntrustOAuthClientWorkflow
       ->setExamples('**untrust-oauth-client** [--id client_id]')
       ->setSynopsis(
         pht(
-          'Set Phabricator to not trust an OAuth client. Phabricator '.
+          'Set ditCraft to not trust an OAuth client. ditCraft '.
           'redirects to trusted OAuth clients that users have authorized '.
           'without user intervention.'))
       ->setArguments(
@@ -46,7 +46,7 @@ final class PhabricatorAuthManagementUntrustOAuthClientWorkflow
     if (!$client->getIsTrusted()) {
       throw new PhutilArgumentUsageException(
         pht(
-          'Phabricator already does not trust OAuth client "%s".',
+          'ditCraft already does not trust OAuth client "%s".',
           $client->getName()));
     }
 
@@ -57,7 +57,7 @@ final class PhabricatorAuthManagementUntrustOAuthClientWorkflow
     $console->writeOut(
       "%s\n",
       pht(
-        'Updated; Phabricator does not trust OAuth client %s.',
+        'Updated; ditCraft does not trust OAuth client %s.',
         $client->getName()));
   }
 

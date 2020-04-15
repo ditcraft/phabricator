@@ -1,15 +1,15 @@
 @title Adding New CSS and JS
 @group developer
 
-Explains how to add new CSS and JS files to Phabricator.
+Explains how to add new CSS and JS files to ditCraft.
 
 = Overview =
 
-Phabricator uses a system called **Celerity** to manage static resources. If you
+ditCraft uses a system called **Celerity** to manage static resources. If you
 are a current or former Facebook employee, Celerity is based on the Haste system
 used at Facebook and generally behaves similarly.
 
-This document is intended for Phabricator developers and contributors. This
+This document is intended for ditCraft developers and contributors. This
 process will not work correctly for third-party code, plugins, or extensions.
 
 = Adding a New File =

@@ -1,4 +1,4 @@
-@title Phabricator Project History
+@title ditCraft Project History
 @group lore
 
 A riveting tale of adventure. In this document, I refer to worldly and
@@ -57,4 +57,4 @@ tools were less negatively received than the older versions. By December 2010 I
 started open sourcing them; Haste became //Celerity// and Alite became
 //Aphront//. I wrote Maniphest to track open issues with the project in January
 or February, left Facebook in April, and shortly after, we open sourced
-Phabricator.
+ditCraft.

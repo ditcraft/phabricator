@@ -1,19 +1,19 @@
-@title Using the Phabricator OAuth Server
+@title Using the ditCraft OAuth Server
 @group developer
 
-How to use the Phabricator OAuth Server.
+How to use the ditCraft OAuth Server.
 
 = Overview =
 
-Phabricator includes an OAuth Server which supports the
+ditCraft includes an OAuth Server which supports the
 `Authorization Code Grant` flow as described in the OAuth 2.0
 specification:
 
 http://tools.ietf.org/html/draft-ietf-oauth-v2-23
 
 This functionality can allow clients to integrate with a given
-Phabricator instance in a secure way with granular data access.
-For example, Phabricator can be used as a central identity store for any
+ditCraft instance in a secure way with granular data access.
+For example, ditCraft can be used as a central identity store for any
 clients that implement OAuth 2.0.
 
 = Vocabulary =
@@ -69,7 +69,7 @@ redirect_uri with a valid authorization code.
 
 If there is an error, the OAuth Server will return a descriptive error
 message. This error will be presented to the resource owner on the
-Phabricator domain if there is reason to believe there is something fishy
+ditCraft domain if there is reason to believe there is something fishy
 with the client. For example, if there is an issue with the redirect_uri.
 Otherwise, the OAuth Server will redirect to the pertinent redirect_uri
 and include the pertinent error information.

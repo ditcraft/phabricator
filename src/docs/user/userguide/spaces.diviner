@@ -138,7 +138,7 @@ Limitations and Caveats
 Some information is shared between spaces, so they do not completely isolate
 users from other activity on the install. This section discusses limitations
 of the isolation model. Most of these limitations are intrinsic to the policy
-model Phabricator uses.
+model ditCraft uses.
 
 **Shared IDs**: Spaces do not have unique object IDs: there is only one `T1`,
 not a separate one in each space. It can be moved between spaces, but `T1`

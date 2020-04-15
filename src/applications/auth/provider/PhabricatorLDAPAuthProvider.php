@@ -11,7 +11,7 @@ final class PhabricatorLDAPAuthProvider extends PhabricatorAuthProvider {
   public function getDescriptionForCreate() {
     return pht(
       'Configure a connection to an LDAP server so that users can use their '.
-      'LDAP credentials to log in to Phabricator.');
+      'LDAP credentials to log in to ditCraft.');
   }
 
   public function getDefaultProviderConfig() {
@@ -311,7 +311,7 @@ final class PhabricatorLDAPAuthProvider extends PhabricatorAuthProvider {
     $instructions = array(
       self::KEY_SEARCH_ATTRIBUTES   => pht(
         "When a user types their LDAP username and password into Phabricator, ".
-        "Phabricator can either bind to LDAP with those credentials directly ".
+        "ditCraft can either bind to LDAP with those credentials directly ".
         "(which is simpler, but not as powerful) or bind to LDAP with ".
         "anonymous credentials, then search for record matching the supplied ".
         "credentials (which is more complicated, but more powerful).\n\n".

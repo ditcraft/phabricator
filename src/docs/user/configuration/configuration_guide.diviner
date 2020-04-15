@@ -1,7 +1,7 @@
 @title Configuration Guide
 @group config
 
-This document contains basic configuration instructions for Phabricator.
+This document contains basic configuration instructions for ditCraft.
 
 = Prerequisites =
 
@@ -11,7 +11,7 @@ If you haven't, see @{article:Installation Guide}.
 The next steps are:
 
   - Configure your webserver (Apache, nginx, or lighttpd).
-  - Access Phabricator with your browser.
+  - Access ditCraft with your browser.
   - Follow the instructions to complete setup.
 
 = Webserver: Configuring Apache =
@@ -24,7 +24,7 @@ documentation for help. Make sure `mod_php` and `mod_rewrite` are enabled,
 and `mod_ssl` if you intend to set up SSL.
 
 If you haven't already, set up a domain name to point to the host you're
-installing on. You can either install Phabricator on a subdomain (like
+installing on. You can either install ditCraft on a subdomain (like
 phabricator.example.com) or an entire domain, but you can not install it in
 some subdirectory of an existing website. Navigate to whatever domain you're
 going to use and make sure Apache serves you something to verify that DNS
@@ -33,7 +33,7 @@ is correctly configured.
 NOTE: The domain must contain a dot ('.'), i.e. not be just a bare name like
 'http://example/'. Some web browsers will not set cookies otherwise.
 
-Now create a VirtualHost entry for Phabricator. It should look something like
+Now create a VirtualHost entry for ditCraft. It should look something like
 this:
 
   name=httpd.conf
@@ -167,7 +167,7 @@ no one else will be able to sign up or log in. For more information, see
 
 During setup, you'll need to configure MySQL. To do this, get MySQL running and
 verify you can connect to it. Consult the MySQL documentation for help. When
-MySQL works, you need to load the Phabricator schemata into it. To do this, run:
+MySQL works, you need to load the ditCraft schemata into it. To do this, run:
 
   phabricator/ $ ./bin/storage upgrade
 
@@ -200,7 +200,7 @@ Continue by:
     @{article:Configuring a Preamble Script}; or
   - configuring where uploaded files and attachments will be stored with
     @{article:Configuring File Storage}; or
-  - configuring Phabricator so it can send mail with
+  - configuring ditCraft so it can send mail with
     @{article:Configuring Outbound Email}; or
   - configuring inbound mail with @{article:Configuring Inbound Email}; or
   - importing repositories with @{article:Diffusion User Guide}; or
@@ -209,4 +209,4 @@ Continue by:
     @{article:Notifications User Guide: Setup and Configuration}; or
   - configuring backups with
     @{article:Configuring Backups and Performing Migrations}; or
-  - contributing to Phabricator with @{article:Contributor Introduction}.
+  - contributing to ditCraft with @{article:Contributor Introduction}.

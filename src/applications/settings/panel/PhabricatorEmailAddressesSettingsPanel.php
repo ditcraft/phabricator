@@ -398,7 +398,7 @@ final class PhabricatorEmailAddressesSettingsPanel
       ->setTitle(pht('Change primary email address?'))
       ->appendParagraph(
         pht(
-          'If you change your primary address, Phabricator will send all '.
+          'If you change your primary address, ditCraft will send all '.
           'email to %s.',
           $address))
       ->appendParagraph(

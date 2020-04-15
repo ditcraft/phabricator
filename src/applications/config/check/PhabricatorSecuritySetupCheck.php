@@ -61,7 +61,7 @@ final class PhabricatorSecuritySetupCheck extends PhabricatorSetupCheck {
             'Improve security by configuring an alternate file domain.'))
         ->setMessage(
           pht(
-            'Phabricator is currently configured to serve user uploads '.
+            'ditCraft is currently configured to serve user uploads '.
             'directly from the same domain as other content. This is a '.
             'security risk.'.
             "\n\n".

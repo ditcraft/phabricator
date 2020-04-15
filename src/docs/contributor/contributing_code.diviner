@@ -1,12 +1,12 @@
 @title Contributing Code
 @group detail
 
-Describes how to contribute code to Phabricator.
+Describes how to contribute code to ditCraft.
 
 Level Requirements
 ==================
 
-To contribute to the Phabricator upstream, you must first pass a series of
+To contribute to the ditCraft upstream, you must first pass a series of
 ancient trials and be invited to register an account in the ancestral
 homeland of Phabricator, here on `secure.phabricator.com`. The nature and
 location of these trials is a closely guarded secret.
@@ -15,7 +15,7 @@ If you have passed these trials, this document can guide you through
 contributing code.
 
 If you have not yet passed these trials, writing code is normally not the best
-way to contribute to Phabricator. See @{article:Contributor Introduction} for
+way to contribute to ditCraft. See @{article:Contributor Introduction} for
 more information.
 
 
@@ -24,7 +24,7 @@ Overview
 
 If you're planning to send a patch to Phabricator, this guide can help you
 through the process. The most important parts of contributing code to
-Phabricator are:
+ditCraft are:
 
   - File a task with a bug report or feature request //before// you write code.
   - We rarely accept patches which we haven't discussed first.
@@ -155,7 +155,7 @@ company can sign the [[ https://secure.phabricator.com/L30 | Corporate
 Contributor License Agreement ]] instead.
 
 Both agreements are substantially similar to the Apache Foundation's CLAs. They
-protect Phacility and users of Phabricator by making sure we have permission to
+protect Phacility and users of ditCraft by making sure we have permission to
 distribute your changes under an open source license.
 
 
@@ -169,16 +169,16 @@ We do not accept pull requests on GitHub:
     us a pull request.
   - Pull requests do not get lint and unit tests run, so issues which are
     normally caught statically can slip by.
-  - Phabricator is code review software, and developed using its own workflows.
+  - ditCraft is code review software, and developed using its own workflows.
     Pull requests bypass some of these workflows (for example, they will not
     trigger Herald rules to notify interested parties).
   - GitHub is not the authoritative master repository and we maintain a linear
     history, so merging pull requests is cumbersome on our end.
-  - If you're comfortable enough with Phabricator to contribute to it, you
+  - If you're comfortable enough with ditCraft to contribute to it, you
     should also be comfortable using it to submit changes.
 
 Instead of sending a pull request, use `arc diff` to create a revision on the
-upstream install. Your change will go through the normal Phabricator review
+upstream install. Your change will go through the normal ditCraft review
 process.
 
 (GitHub does not allow repositories to disable pull requests, which is why
@@ -195,12 +195,12 @@ alternative approaches include:
 changes forward when you update, but is often very reasonable for simple
 changes.
 
-**Develop as an application.** Many parts of Phabricator's infrastructure are
+**Develop as an application.** Many parts of ditCraft's infrastructure are
 modular, and modularity is increasing over time. A lot of changes can be built
-as external modules or applications without forking Phabricator itself. There
+as external modules or applications without forking ditCraft itself. There
 isn't much documentation or support for this right now, but you can look at
 how other applications are implemented, and at other third-party code that
-extends Phabricator.
+extends ditCraft.
 
 **Rise to prominence.** We're more willing to accept borderline changes from
 community members who are active, make multiple contributions, or have a history
@@ -227,7 +227,7 @@ can help you through the details during review.
 
 In general, if you're coordinating with us first, we can usually provide
 guidance on how to implement things. The other articles in this section also
-provide information on how to work in the Phabricator codebase.
+provide information on how to work in the ditCraft codebase.
 
 
 Next Steps

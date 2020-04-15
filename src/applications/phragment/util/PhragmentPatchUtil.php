@@ -5,7 +5,7 @@ final class PhragmentPatchUtil extends Phobject {
   const EMPTY_HASH = '0000000000000000000000000000000000000000';
 
   /**
-   * Calculate the DiffMatchPatch patch between two Phabricator files.
+   * Calculate the DiffMatchPatch patch between two ditCraft files.
    *
    * @phutil-external-symbol class diff_match_patch
    */

@@ -1,17 +1,17 @@
 @title Managing Caches
 @group config
 
-Discusses Phabricator caches and cache management.
+Discusses ditCraft caches and cache management.
 
 Overview
 ========
 
-Phabricator uses various caches to improve performance, similar to the caches
+ditCraft uses various caches to improve performance, similar to the caches
 a web browser uses to improve web performance.
 
 In particular, blocks of text which are expensive to render (like formatted
 text and syntax highlighted code) are often cached after they're rendered for
-the first time. When they're rendered again, Phabricator can read the cache
+the first time. When they're rendered again, ditCraft can read the cache
 instead of recomputing the result.
 
 Because text is cached, you may continue to see the old result even after you
@@ -28,12 +28,12 @@ you can just ignore the out of date caches and they'll fix themselves
 eventually (usually within 30 days).
 
 If you don't want to wait, you can purge the caches. This will remove any
-cached data and force Phabricator to recompute the results.
+cached data and force ditCraft to recompute the results.
 
 Purging Caches
 ==============
 
-If you need to purge Phabricator's caches, you can use the CLI tool. Run it
+If you need to purge ditCraft's caches, you can use the CLI tool. Run it
 with the `--help` flag to see options:
 
   phabricator/ $ ./bin/cache purge --help
@@ -44,4 +44,4 @@ just purge all of the caches:
   phabricator/ $ ./bin/cache purge --all
 
 You can purge caches safely. The data they contain can always be rebuilt from
-other data if Phabricator needs it.
+other data if ditCraft needs it.

@@ -166,7 +166,7 @@ final class DifferentialJIRAIssuesField
           pht('Not Linked'),
           pht(
             'You can not add JIRA issues (%s) to this revision because your '.
-            'Phabricator account is not linked to a JIRA account.',
+            'ditCraft account is not linked to a JIRA account.',
             implode(', ', $add)),
           $xaction);
         continue;

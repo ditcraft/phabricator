@@ -4,10 +4,10 @@
 Overview
 ========
 
-You can configure Phabricator to connect to one or more fulltext search
+You can configure ditCraft to connect to one or more fulltext search
 services.
 
-By default, Phabricator will use MySQL for fulltext search. This is suitable
+By default, ditCraft will use MySQL for fulltext search. This is suitable
 for most installs. However, alternate engines are supported.
 
 
@@ -33,10 +33,10 @@ like this:
 ]
 ```
 
-When a user makes a change to a document, Phabricator writes the updated
+When a user makes a change to a document, ditCraft writes the updated
 document into every configured, writable fulltext service.
 
-When a user issues a query, Phabricator tries configured, readable services
+When a user issues a query, ditCraft tries configured, readable services
 in order until it is able to execute the query successfully.
 
 These options are supported by all service types:
@@ -166,7 +166,7 @@ Advanced Example
 This is a more advanced example which shows a configuration with multiple
 different services in different roles. In this example:
 
-  - Phabricator is using an Elasticsearch 2 service as its primary fulltext
+  - ditCraft is using an Elasticsearch 2 service as its primary fulltext
     service.
   - An Elasticsearch 5 service is online, but only receiving writes.
   - The MySQL service is serving as a backup if Elasticsearch fails.

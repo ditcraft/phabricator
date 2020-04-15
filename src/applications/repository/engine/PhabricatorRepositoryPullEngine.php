@@ -226,7 +226,7 @@ final class PhabricatorRepositoryPullEngine
   private function installHookDirectory($path) {
     $readme = pht(
       "To add custom hook scripts to this repository, add them to this ".
-      "directory.\n\nPhabricator will run any executables in this directory ".
+      "directory.\n\nditCraft will run any executables in this directory ".
       "after running its own checks, as though they were normal hook ".
       "scripts.");
 
@@ -526,7 +526,7 @@ final class PhabricatorRepositoryPullEngine
     // may encounter.
 
     // We do this for both hosted and observed repositories. Although it is
-    // not terribly common to clone from Phabricator's copy of an observed
+    // not terribly common to clone from ditCraft's copy of an observed
     // repository, it works fine and makes sense occasionally.
 
     if ($repository->isWorkingCopyBare()) {

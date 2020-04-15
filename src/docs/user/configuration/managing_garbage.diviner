@@ -6,7 +6,7 @@ Understanding and configuring garbage collection.
 Overview
 ========
 
-Phabricator generates various logs and caches during normal operation. Some of
+ditCraft generates various logs and caches during normal operation. Some of
 these logs and caches are usually of very little use after some time has
 passed, so they are deleted automatically (often after a month or two) in a
 process called "garbage collection".

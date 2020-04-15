@@ -1,12 +1,12 @@
 @title Internationalization
 @group developer
 
-Describes Phabricator translation and localization.
+Describes ditCraft translation and localization.
 
 Overview
 ========
 
-Phabricator partially supports internationalization, but many of the tools
+ditCraft partially supports internationalization, but many of the tools
 are missing or in a prototype state.
 
 This document describes what tools exist today, how to add new translations,
@@ -58,7 +58,7 @@ $dialog->appendParagraph(pht('This is an example.'));
 ```
 
 This allows the code to return the correct Spanish or German or Russian
-version of the text, if the viewer is using Phabricator in one of those
+version of the text, if the viewer is using ditCraft in one of those
 languages and a translation is available.
 
 Using `pht()` properly so that strings are translatable can be tricky. Briefly,

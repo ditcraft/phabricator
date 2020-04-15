@@ -40,7 +40,7 @@ final class PhabricatorTimezoneSetupCheck extends PhabricatorSetupCheck {
 
     $message = pht(
       "Your configuration fails to specify a server timezone. You can either ".
-      "set the PHP configuration value '%s' or the Phabricator ".
+      "set the PHP configuration value '%s' or the ditCraft ".
       "configuration value '%s' to specify one.",
       'date.timezone',
       'phabricator.timezone');

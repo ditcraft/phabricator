@@ -1,12 +1,12 @@
 @title Upgrading Phabricator
 @group intro
 
-This document contains instructions for keeping Phabricator up to date.
+This document contains instructions for keeping ditCraft up to date.
 
 Overview
 ========
 
-Phabricator is under active development, and new features are released
+ditCraft is under active development, and new features are released
 continuously. Staying up to date will keep your install secure.
 
 We recommend installs upgrade regularly (every 1-2 weeks). Upgrades usually go
@@ -27,7 +27,7 @@ information, and warnings about compatibility issues or migrations.
 Stable Branch
 =============
 
-You can either run the `master` or `stable` branch of Phabricator. The `stable`
+You can either run the `master` or `stable` branch of ditCraft. The `stable`
 branch is run in the [[ https://phacility.com | Phacility Cluster ]], and lags
 about a week behind `master`.
 
@@ -51,13 +51,13 @@ You can now follow the upgrade process normally.
 Upgrade Process
 ===============
 
-IMPORTANT: You **MUST** restart Phabricator after upgrading. For help, see
+IMPORTANT: You **MUST** restart ditCraft after upgrading. For help, see
 @{article:Restarting Phabricator}.
 
 IMPORTANT: You **MUST** upgrade `libphutil`, `arcanist` and `phabricator` at
 the same time.
 
-Phabricator runs on many different systems, with many different webservers.
+ditCraft runs on many different systems, with many different webservers.
 Given this diversity, we don't currently maintain a comprehensive upgrade
 script which can work on any system. However, the general steps are the same
 on every system:
@@ -71,7 +71,7 @@ on every system:
 
 For some more discussion details, see @{article:Configuration Guide}.
 
-This template script roughly outlines the steps required to upgrade Phabricator.
+This template script roughly outlines the steps required to upgrade ditCraft.
 You'll need to adjust paths and commands a bit for your particular system:
 
 ```lang=sh

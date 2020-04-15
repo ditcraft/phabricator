@@ -19,8 +19,8 @@ final class PhabricatorAccessibilitySetting
 
   protected function getControlInstructions() {
     return pht(
-      'If you have difficulty reading the Phabricator UI, this setting '.
-      'may make Phabricator more accessible.');
+      'If you have difficulty reading the ditCraft UI, this setting '.
+      'may make ditCraft more accessible.');
   }
 
   public function getSettingDefaultValue() {

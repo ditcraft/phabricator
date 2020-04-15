@@ -1,6 +1,6 @@
 {
   "name": "phabflavor",
-  "title": "Phabricator Flavor Text",
+  "title": "ditCraft Flavor Text",
   "short": "Flavor Text",
   "preface": "Recommendations, lore, and dark rituals.",
   "root": "../../../",
@@ -27,7 +27,7 @@
       "name": "Javascript"
     },
     "lore": {
-      "name": "Phabricator Lore"
+      "name": "ditCraft Lore"
     },
     "php": {
       "name": "PHP"

@@ -166,7 +166,7 @@ final class PhabricatorMailEmailEngine
     if (PhabricatorEnv::getEnvConfig('phabricator.silent')) {
       $mail->setMessage(
         pht(
-          'Phabricator is running in silent mode. See `%s` '.
+          'ditCraft is running in silent mode. See `%s` '.
           'in the configuration to change this setting.',
           'phabricator.silent'));
 

@@ -1,22 +1,22 @@
 @title Adding New Classes
 @group developer
 
-Guide to adding new classes to extend Phabricator.
+Guide to adding new classes to extend ditCraft.
 
 Overview
 ========
 
-Phabricator is highly modular, and many parts of it can be extended by adding
+ditCraft is highly modular, and many parts of it can be extended by adding
 new classes. This document explains how to write new classes to change or
-expand the behavior of Phabricator.
+expand the behavior of ditCraft.
 
 IMPORTANT: The upstream does not offer support with extension development.
 
 Fundamentals
 ============
 
-Phabricator primarily discovers functionality by looking at concrete subclasses
-of some base class. For example, Phabricator determines which applications are
+ditCraft primarily discovers functionality by looking at concrete subclasses
+of some base class. For example, ditCraft determines which applications are
 available by looking at all of the subclasses of
 @{class@phabricator:PhabricatorApplication}. It
 discovers available workflows in `arc` by looking at all of the subclasses of
@@ -24,7 +24,7 @@ discovers available workflows in `arc` by looking at all of the subclasses of
 by looking at all of the subclasses of @{class@libphutil:PhutilLocale}.
 
 This pattern holds in many cases, so you can often add functionality by adding
-new classes with no other work. Phabricator will automatically discover and
+new classes with no other work. ditCraft will automatically discover and
 integrate the new capabilities or features at runtime.
 
 There are two main ways to add classes:
@@ -42,11 +42,11 @@ The next sections walk through these approaches in greater detail.
 Extensions Directory
 ====================
 
-The easiest way to extend Phabricator by adding new classes is to drop them
+The easiest way to extend ditCraft by adding new classes is to drop them
 into the extensions directory, at `phabricator/src/extensions/`.
 
 This is intended as a quick way to add small pieces of functionality, test new
-features, or get started on a larger project. Extending Phabricator like this
+features, or get started on a larger project. Extending ditCraft like this
 imposes a small performance penalty compared to using a library.
 
 This directory exists in all libphutil libraries, so you can find similar
@@ -76,7 +76,7 @@ extensions.
 Creating Libraries
 ==================
 
-A more powerful (but more complicated) way to extend Phabricator is to create
+A more powerful (but more complicated) way to extend ditCraft is to create
 a libphutil library. Libraries can organize a larger amount of code, are easier
 to work with and distribute, and have slightly better performance than loose
 source files in the extensions directory.
@@ -85,7 +85,7 @@ In general, you'll perform these one-time setup steps to create a library:
 
   - Create a new directory.
   - Use `arc liberate` to initialize and name the library.
-  - Configure Phabricator or Arcanist to load the library.
+  - Configure ditCraft or Arcanist to load the library.
 
 Then, to add new code, you do this:
 
@@ -146,13 +146,13 @@ This will write three files:
 Linking with Phabricator
 ========================
 
-If you aren't using this library with Phabricator (e.g., you are only using it
+If you aren't using this library with ditCraft (e.g., you are only using it
 with Arcanist or are building something else on libphutil) you can skip this
 step.
 
 But, if you intend to use this library with Phabricator, you need to define its
-dependency on Phabricator by creating a `.arcconfig` file which points at
-Phabricator. For example, you might write this file to
+dependency on ditCraft by creating a `.arcconfig` file which points at
+ditCraft. For example, you might write this file to
 `libcustom/.arcconfig`:
 
 ```lang=json
@@ -165,16 +165,16 @@ Phabricator. For example, you might write this file to
 
 For details on creating a `.arcconfig`, see
 @{article:Arcanist User Guide: Configuring a New Project}. In general, this
-tells `arc liberate` that it should look for symbols in Phabricator when
+tells `arc liberate` that it should look for symbols in ditCraft when
 performing static analysis.
 
-NOTE: If Phabricator isn't located next to your custom library, specify a
+NOTE: If ditCraft isn't located next to your custom library, specify a
 path which actually points to the `phabricator/` directory.
 
 You do not need to declare dependencies on `arcanist` or `libphutil`,
 since `arc liberate` automatically loads them.
 
-Finally, edit your Phabricator config to tell it to load your library at
+Finally, edit your ditCraft config to tell it to load your library at
 runtime, by adding it to `load-libraries`:
 
 ```lang=json
@@ -185,7 +185,7 @@ runtime, by adding it to `load-libraries`:
 ...
 ```
 
-Now, Phabricator will be able to load classes from your custom library.
+Now, ditCraft will be able to load classes from your custom library.
 
 
 Writing Classes
@@ -206,7 +206,7 @@ This will automatically regenerate the static map of the library.
 What You Can Extend And Invoke
 ==============================
 
-libphutil, Arcanist and Phabricator are strict about extensibility of classes
+libphutil, Arcanist and ditCraft are strict about extensibility of classes
 and visibility of methods and properties. Most classes are marked `final`, and
 methods have the minimum required visibility (protected or private). The goal
 of this strictness is to make it clear what you can safely extend, access, and
@@ -219,7 +219,7 @@ When developing libraries to work with libphutil, Arcanist and Phabricator, you
 should respect method and property visibility.
 
 If you want to add features but can't figure out how to do it without changing
-Phabricator code, here are some approaches you may be able to take:
+ditCraft code, here are some approaches you may be able to take:
 
   - {icon check, color=green} **Use Composition**: If possible, use composition
     rather than extension to build your feature.

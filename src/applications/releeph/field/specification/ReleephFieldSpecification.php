@@ -213,7 +213,7 @@ abstract class ReleephFieldSpecification
    * @{class:ReleephFieldSpecification} implements much of
    * @{interface:PhabricatorMarkupInterface} for you. If you return true from
    * `shouldMarkup()`, and implement `getMarkupText()` then your text will be
-   * rendered through the Phabricator markup pipeline.
+   * rendered through the ditCraft markup pipeline.
    *
    * Output is retrievable with `getMarkupEngineOutput()`.
    */

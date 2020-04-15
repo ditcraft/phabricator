@@ -47,7 +47,7 @@ abstract class PhabricatorStorageManagementWorkflow
 
     throw new PhutilArgumentUsageException(
       pht(
-        'Phabricator is configured in cluster mode, with multiple database '.
+        'ditCraft is configured in cluster mode, with multiple database '.
         'hosts. Use "--host" to specify which host you want to operate on.'));
   }
 
@@ -98,7 +98,7 @@ abstract class PhabricatorStorageManagementWorkflow
         } else {
           throw new PhutilArgumentUsageException(
             pht(
-              'Phabricator is currently in read-only mode. Use --force to '.
+              'ditCraft is currently in read-only mode. Use --force to '.
               'override this mode.'));
         }
       }
@@ -189,7 +189,7 @@ abstract class PhabricatorStorageManagementWorkflow
         "You can exit this workflow, update MySQL now, and then run this ".
         "workflow again. This is recommended, but may cause a lot of downtime ".
         "right now.\n\n".
-        "You can exit this workflow, continue using Phabricator without ".
+        "You can exit this workflow, continue using ditCraft without ".
         "applying adjustments, update MySQL at a later date, and then run ".
         "this workflow again. This is also a good approach, and will let you ".
         "delay downtime until later.\n\n".
@@ -826,7 +826,7 @@ abstract class PhabricatorStorageManagementWorkflow
     $message = array();
     if ($all_surplus) {
       $message[] = pht(
-        'You have surplus schemata (extra tables or columns which Phabricator '.
+        'You have surplus schemata (extra tables or columns which ditCraft '.
         'does not expect). For information on resolving these '.
         'issues, see the "Surplus Schemata" section in the "Managing Storage '.
         'Adjustments" article in the documentation.');
@@ -844,21 +844,21 @@ abstract class PhabricatorStorageManagementWorkflow
         $message[] = pht(
           'Some of these errors are caused by access control problems. '.
           'The user you are connecting with does not have permission to see '.
-          'all of the database or tables that Phabricator uses. You need to '.
+          'all of the database or tables that ditCraft uses. You need to '.
           'GRANT the user more permission, or use a different user.');
       }
 
       if ($any_surplus) {
         $message[] = pht(
           'Some of these errors are caused by surplus schemata (extra '.
-          'tables or columns which Phabricator does not expect). These are '.
+          'tables or columns which ditCraft does not expect). These are '.
           'not serious. For information on resolving these issues, see the '.
           '"Surplus Schemata" section in the "Managing Storage Adjustments" '.
           'article in the documentation.');
       }
 
       $message[] = pht(
-        'If you are not developing Phabricator itself, report this issue to '.
+        'If you are not developing ditCraft itself, report this issue to '.
         'the upstream.');
 
       $message[] = pht(

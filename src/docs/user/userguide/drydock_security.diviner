@@ -62,10 +62,10 @@ configuring Drydock.
 | Absolute | Special Requirements | Completely isolate all resources.
 
 **Zero Isolation**: Run Drydock operations on the same host that Phabricator
-runs on. This is only suitable for developing or testing Phabricator. Any
-Drydock operation can potentially compromise Phabricator. It is intentionally
+runs on. This is only suitable for developing or testing ditCraft. Any
+Drydock operation can potentially compromise ditCraft. It is intentionally
 difficult to configure Drydock to operate in this mode. Running Drydock
-operations on the Phabricator host is strongly discouraged.
+operations on the ditCraft host is strongly discouraged.
 
 **Low Isolation**: Designate a separate Drydock host and run Drydock
 operations on it. This is suitable for small installs and provides a reasonable
@@ -112,7 +112,7 @@ Attackers have three primary targets:
 attacker wants to run a program like a Bitcoin miner or botnet client on
 hardware that they aren't paying for or which can't be traced to them. They
 write a "unit test" or which launches this software, then send a revision
-containing this "unit test" for review. If Phabricator is configured to
+containing this "unit test" for review. If ditCraft is configured to
 automatically run tests on new revisions, it may execute automatically and give
 the attacker access to computing resources they did not previously control and
 which can not easily be traced back to them.
@@ -126,11 +126,11 @@ create a "Trusted Contributors" project and only run tests if a revision author
 is a member of the project.
 
 **Attacks against Phabricator** are more sophisticated. In this scenario, an
-attacker tries to compromise Phabricator itself (for example, to make themselves
+attacker tries to compromise ditCraft itself (for example, to make themselves
 an administrator or gain access to an administrator account).
 
-This is made possible if Drydock is running on the same host as Phabricator or
-runs on a privileged subnet with access to resources like Phabricator database
+This is made possible if Drydock is running on the same host as ditCraft or
+runs on a privileged subnet with access to resources like ditCraft database
 hosts. Most installs should be concerned about this attack.
 
 The best way to defuse this attack is to run Drydock processes on a separate

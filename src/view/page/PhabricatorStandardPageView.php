@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This is a standard Phabricator page with menus, Javelin, DarkConsole, and
+ * This is a standard ditCraft page with menus, Javelin, DarkConsole, and
  * basic styles.
  */
 final class PhabricatorStandardPageView extends PhabricatorBarePageView
@@ -259,7 +259,7 @@ final class PhabricatorStandardPageView extends PhabricatorBarePageView
               'doc_name' => pht('See Documentation'),
               'doc_href' => $doc_href,
               'message' => pht(
-                'Phabricator thinks you are using %s, but your '.
+                'ditCraft thinks you are using %s, but your '.
                 'client is convinced that it is using %s. This is a serious '.
                 'misconfiguration with subtle, but significant, consequences.',
                 $server_protocol, $client_protocol),

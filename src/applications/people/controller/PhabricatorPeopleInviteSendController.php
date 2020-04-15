@@ -77,7 +77,7 @@ final class PhabricatorPeopleInviteSendController
 
           $template = array();
           $template[] = pht(
-            '%s has invited you to join Phabricator.',
+            '%s has invited you to join ditCraft.',
             $viewer->getFullName());
 
           if (strlen(trim($message))) {

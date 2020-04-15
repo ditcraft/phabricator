@@ -28,7 +28,7 @@ final class PhabricatorRepositoryConfigOptions
         ->setDescription(
           pht(
             'The default location in which to store working copies and other '.
-            'data about repositories. Phabricator will control and manage '.
+            'data about repositories. ditCraft will control and manage '.
             'data here, so you should **not** choose an existing directory '.
             'full of data you care about.')),
     );

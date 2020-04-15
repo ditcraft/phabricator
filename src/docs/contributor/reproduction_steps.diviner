@@ -15,7 +15,7 @@ This document explains what we're looking for in good reproduction steps.
 Briefly:
 
   - Reproduction steps must allow us to reproduce the problem locally on a
-    clean, up-to-date install of Phabricator.
+    clean, up-to-date install of ditCraft.
   - Reproduction should be as simple as possible.
 
 Good reproduction steps can take time to write out clearly, simplify, and
@@ -70,7 +70,7 @@ Reliable Reproduction
 =====================
 
 When you file a bug report, the first thing we do to fix it is to try to
-reproduce the problem locally on an up-to-date install of Phabricator. We will
+reproduce the problem locally on an up-to-date install of ditCraft. We will
 do this by following the steps you provide. If we can recreate the issue
 locally, we can almost always resolve the problem (often very promptly).
 
@@ -80,7 +80,7 @@ settings, feed stories, etc) that we don't have access to. We either can't
 follow these steps, or can't reproduce issues by following them.
 
 Reproduction steps must be complete and self-contained, and must allow
-**anyone** to reproduce the issue on a new, empty install of Phabricator. If
+**anyone** to reproduce the issue on a new, empty install of ditCraft. If
 the bug you're seeing depends on data or configuration which would not be
 present on a new install, you need to include that information in your steps.
 
@@ -101,7 +101,7 @@ to private or proprietary data.
 
 Now, to verify that your steps provide a complete, self-contained way to
 reproduce the issue, follow them yourself on a new, empty, up-to-date instance
-of Phabricator.
+of ditCraft.
 
 If you can't easily start an empty instance locally, you can launch an empty
 instance on Phacility in about 60 seconds (see the "Resources" section for
@@ -135,7 +135,7 @@ We provide some resources which can make it easier to start building steps, or
 to simplify steps.
 
 **Phacility Test Instances**: You can launch a new, up-to-date instance of
-Phabricator on Phacility in about a minute at <https://admin.phacility.com>.
+ditCraft on Phacility in about a minute at <https://admin.phacility.com>.
 These instances run `stable`.
 
 You can use these instances to make sure that issues haven't already been

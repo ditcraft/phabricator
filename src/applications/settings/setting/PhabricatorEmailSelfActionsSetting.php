@@ -22,7 +22,7 @@ final class PhabricatorEmailSelfActionsSetting
 
   protected function getControlInstructions() {
     return pht(
-      'If you disable **Self Actions**, Phabricator will not notify '.
+      'If you disable **Self Actions**, ditCraft will not notify '.
       'you about actions you take.');
   }
 

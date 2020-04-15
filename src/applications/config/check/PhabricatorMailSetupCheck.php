@@ -12,7 +12,7 @@ final class PhabricatorMailSetupCheck extends PhabricatorSetupCheck {
     }
 
     $message = pht(
-      'You haven\'t configured mailers yet, so Phabricator won\'t be able '.
+      'You haven\'t configured mailers yet, so ditCraft won\'t be able '.
       'to send outbound mail or receive inbound mail. See the '.
       'configuration setting cluster.mailers for details.');
 

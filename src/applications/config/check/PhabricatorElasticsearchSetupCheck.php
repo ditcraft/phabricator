@@ -34,7 +34,7 @@ final class PhabricatorElasticsearchSetupCheck extends PhabricatorSetupCheck {
         } catch (Exception $ex) {
           $summary = pht('Elasticsearch is not reachable as configured.');
           $message = pht(
-            'Elasticsearch is configured (with the %s setting) but Phabricator'.
+            'Elasticsearch is configured (with the %s setting) but ditCraft'.
             ' encountered an exception when trying to test the index.'.
             "\n\n".
             '%s',
@@ -69,7 +69,7 @@ final class PhabricatorElasticsearchSetupCheck extends PhabricatorSetupCheck {
             'Elasticsearch index exists but needs correction.');
 
           $message = pht(
-            'Either the Phabricator schema for Elasticsearch has changed '.
+            'Either the ditCraft schema for Elasticsearch has changed '.
             'or Elasticsearch created the index automatically. '.
             'Use the following command to rebuild the index.');
 

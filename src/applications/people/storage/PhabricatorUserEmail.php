@@ -211,7 +211,7 @@ final class PhabricatorUserEmail
     id(new PhabricatorMetaMTAMail())
       ->addRawTos(array($address))
       ->setForceDelivery(true)
-      ->setSubject(pht('[Phabricator] Email Verification'))
+      ->setSubject(pht('[ditCraft] Email Verification'))
       ->setBody($body)
       ->setRelatedPHID($user->getPHID())
       ->saveAndSend();
@@ -242,7 +242,7 @@ final class PhabricatorUserEmail
       pht('Hi %s', $username),
       pht(
         'This email address (%s) is no longer your primary email address. '.
-        'Going forward, Phabricator will send all email to your new primary '.
+        'Going forward, ditCraft will send all email to your new primary '.
         'email address (%s).',
         $old_address,
         $new_address));
@@ -250,7 +250,7 @@ final class PhabricatorUserEmail
     id(new PhabricatorMetaMTAMail())
       ->addRawTos(array($old_address))
       ->setForceDelivery(true)
-      ->setSubject(pht('[Phabricator] Primary Address Changed'))
+      ->setSubject(pht('[ditCraft] Primary Address Changed'))
       ->setBody($body)
       ->setFrom($user->getPHID())
       ->setRelatedPHID($user->getPHID())
@@ -276,13 +276,13 @@ final class PhabricatorUserEmail
       pht('Hi %s', $username),
       pht(
         'This is now your primary email address (%s). Going forward, '.
-        'Phabricator will send all email here.',
+        'ditCraft will send all email here.',
         $new_address));
 
     id(new PhabricatorMetaMTAMail())
       ->addRawTos(array($new_address))
       ->setForceDelivery(true)
-      ->setSubject(pht('[Phabricator] Primary Address Changed'))
+      ->setSubject(pht('[ditCraft] Primary Address Changed'))
       ->setBody($body)
       ->setFrom($user->getPHID())
       ->setRelatedPHID($user->getPHID())

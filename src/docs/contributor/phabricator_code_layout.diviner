@@ -1,15 +1,15 @@
-@title Phabricator Code Layout
+@title ditCraft Code Layout
 @group developer
 
-Guide to Phabricator code layout, including how URI mapping works through
+Guide to ditCraft code layout, including how URI mapping works through
 application class and subdirectory organization best practices.
 
 = URI Mapping =
 
-When a user visits a Phabricator URI, the Phabricator infrastructure parses
+When a user visits a ditCraft URI, the ditCraft infrastructure parses
 that URI with a regular expression to determine what controller class to load.
 
-The Phabricator infrastructure knows where a given controller class lives on
+The ditCraft infrastructure knows where a given controller class lives on
 disk from a cache file the Arcanist phutil mapper generates. This mapping
 should be updated whenever new classes or files are added:
 
@@ -55,7 +55,7 @@ this document. See @{article:Adding New CSS and JS}.)
   phabricator/webroot/rsrc/css/application/derp/
 
 These directories under `phabricator/src/applications/derp/` represent
-the basic set of class types from which most Phabricator applications are
+the basic set of class types from which most ditCraft applications are
 assembled. Each would contain a class file. For `Derp`, these classes could be
 something like:
 

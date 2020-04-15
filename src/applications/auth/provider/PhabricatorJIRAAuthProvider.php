@@ -198,7 +198,7 @@ final class PhabricatorJIRAAuthProvider
         ->appendRemarkupInstructions(
           pht(
             "**JIRA Instance Name**\n\n".
-            "Choose a permanent name for this instance of JIRA. Phabricator ".
+            "Choose a permanent name for this instance of JIRA. ditCraft ".
             "uses this name internally to keep track of this instance of ".
             "JIRA, in case the URL changes later.\n\n".
             "Use lowercase letters, digits, and period. For example, ".
@@ -282,7 +282,7 @@ final class PhabricatorJIRAAuthProvider
                 $viewer,
                 pht(
                   '**Post a comment** in the JIRA task, similar to the '.
-                  'emails Phabricator sends.')),
+                  'emails ditCraft sends.')),
               $this->shouldCreateJIRAComment()));
     }
 

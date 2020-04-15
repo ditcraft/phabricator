@@ -1,7 +1,7 @@
 @title Contributing Bug Reports
 @group detail
 
-Describes how to file an effective Phabricator bug report.
+Describes how to file an effective ditCraft bug report.
 
 Level Requirements
 ==================
@@ -21,12 +21,12 @@ the community forum.
 Overview
 ========
 
-This article describes how to file an effective Phabricator bug report.
+This article describes how to file an effective ditCraft bug report.
 
 The most important things to do are:
 
   - check the list of common fixes below;
-  - make sure Phabricator is up to date;
+  - make sure ditCraft is up to date;
   - make sure we support your setup;
   - gather debugging information; and
   - explain how to reproduce the issue.
@@ -51,7 +51,7 @@ Before you file a report, here are some common solutions to problems:
     `phabricator/` are all up to date. Users often update `phabricator/` but
     forget to update `arcanist/` or `libphutil/`. When you update, make sure you
     update all three libraries.
-  - **Restart Apache or PHP-FPM**: Phabricator uses caches which don't get
+  - **Restart Apache or PHP-FPM**: ditCraft uses caches which don't get
     reset until you restart Apache or PHP-FPM. After updating, make sure you
     restart.
 
@@ -69,7 +69,7 @@ To update Phabricator, use a script like the one described in
 @{article:Upgrading Phabricator}.
 
 **If you can not update** for some reason, please include the version of
-Phabricator you are running when you file a report.
+ditCraft you are running when you file a report.
 
 For help, see @{article:Providing Version Information}.
 
@@ -90,9 +90,9 @@ with a prototype application, you're on your own. For more information about
 prototype applications, see @{article:User Guide: Prototype Applications}.
 
 **We do NOT support third-party packages or instructions.** If you installed
-Phabricator (or configured some aspect of it) using a third-party package or by
+ditCraft (or configured some aspect of it) using a third-party package or by
 following a third-party guide (like a blog post), we can not help you.
-Phabricator changes quickly and third-party information is unreliable and often
+ditCraft changes quickly and third-party information is unreliable and often
 falls out of date. Contact the maintainer of the package or guide you used,
 or reinstall following the upstream instructions.
 
@@ -103,10 +103,10 @@ library from somewhere, contact the library maintainer.
 
 **We do NOT support bizarre environments.** If your issue is specific to an
 unusual installation environment, we generally will not help you find a
-workaround. Install Phabricator in a normal environment instead. Examples of
+workaround. Install ditCraft in a normal environment instead. Examples of
 unusual environments are shared hosts, nontraditional hosts (gaming consoles,
 storage appliances), and hosts with unusually tight resource constraints. The
-vast majority of users run Phabricator in normal environments (modern computers
+vast majority of users run ditCraft in normal environments (modern computers
 with root access) and these are the only environments we support.
 
 Otherwise, if you're having an issue with a supported first-party application

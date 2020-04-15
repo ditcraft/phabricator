@@ -54,7 +54,7 @@ final class PhabricatorAuthConfirmLinkController
           ),
           pht(
             'Confirm the link with this %s account. This account will be '.
-            'able to log in to your Phabricator account.',
+            'able to log in to your ditCraft account.',
             $provider->getProviderName())))
       ->appendChild(
         id(new PhabricatorAuthAccountView())

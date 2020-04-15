@@ -57,13 +57,13 @@ locked include:
 
 
 **Required for bootstrapping**: Some options, like `mysql.host`, must be
-available before Phabricator can read configuration from the database.
+available before ditCraft can read configuration from the database.
 
-If you stored `mysql.host` only in the database, Phabricator would not know how
+If you stored `mysql.host` only in the database, ditCraft would not know how
 to connect to the database in order to read the value in the first place.
 
 These options must be provided in a configuration source which is read earlier
-in the bootstrapping process, before Phabricator connects to the database.
+in the bootstrapping process, before ditCraft connects to the database.
 
 
 **Errors could not be fixed from the web UI**: Some options, like
@@ -83,7 +83,7 @@ attacker who has gained access to an administrator account in order to gain
 greater access.
 
 For example, an attacker who could modify `cluster.mailers` (and other
-similar options), could potentially reconfigure Phabricator to send mail
+similar options), could potentially reconfigure ditCraft to send mail
 through an evil server they controlled, then trigger password resets on other
 user accounts to compromise them.
 
@@ -122,7 +122,7 @@ value set in the database. Most commonly, this is because:
     value. This value was written to the database.
   - In a later version of the software, the value became locked.
 
-When Phabricator was originally released, locked configuration did not yet
+When ditCraft was originally released, locked configuration did not yet
 exist. Locked configuration was introduced later, and then configuration options
 were gradually locked for a long time after that.
 
@@ -134,10 +134,10 @@ to lock the value.
 Locking values was more common in the past, and it is now relatively rare for
 an unlocked value to become locked: when new values are introduced, they are
 generally locked or hidden appropriately. In most cases, this setup issue only
-affects installs that have used Phabricator for a long time.
+affects installs that have used ditCraft for a long time.
 
-At time of writing (February 2019), Phabricator currently respects these old
-database values. However, some future version of Phabricator will refuse to
+At time of writing (February 2019), ditCraft currently respects these old
+database values. However, some future version of ditCraft will refuse to
 read locked configuration from the database, because this improves security if
 an attacker manages to find a way to bypass restrictions on editing locked
 configuration from the web UI.

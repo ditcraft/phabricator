@@ -40,7 +40,7 @@ final class PhabricatorVCSResponse extends AphrontResponse {
     if ($this->getHTTPResponseCode() == 401) {
       $headers[] = array(
         'WWW-Authenticate',
-        'Basic realm="Phabricator Repositories"',
+        'Basic realm="ditCraft Repositories"',
       );
     }
 

@@ -1,14 +1,14 @@
 @title CSS Coding Standards
 @group standards
 
-This document describes CSS features and coding standards for Phabricator.
+This document describes CSS features and coding standards for ditCraft.
 
 = Overview =
 
 This document describes technical and style guidelines for writing CSS in
-Phabricator.
+ditCraft.
 
-Phabricator has a limited CSS preprocessor. This document describes the features
+ditCraft has a limited CSS preprocessor. This document describes the features
 it makes available.
 
 = Z-Indexes =

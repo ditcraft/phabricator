@@ -48,15 +48,15 @@ final class DivinerMainController extends DivinerController {
       $document->appendChild($list);
     } else {
       $text = pht(
-        "(NOTE) **Looking for Phabricator documentation?** ".
+        "(NOTE) **Looking for ditCraft documentation?** ".
         "If you're looking for help and information about Phabricator, ".
         "you can [[https://secure.phabricator.com/diviner/ | ".
-        "browse the public Phabricator documentation]] on the live site.\n\n".
+        "browse the public ditCraft documentation]] on the live site.\n\n".
         "Diviner is the documentation generator used to build the ".
-        "Phabricator documentation.\n\n".
+        "ditCraft documentation.\n\n".
         "You haven't generated any Diviner documentation books yet, so ".
         "there's nothing to show here. If you'd like to generate your own ".
-        "local copy of the Phabricator documentation and have it appear ".
+        "local copy of the ditCraft documentation and have it appear ".
         "here, run this command:\n\n".
         "  %s\n\n",
         'phabricator/ $ ./bin/diviner generate');

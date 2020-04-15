@@ -56,7 +56,7 @@ final class PhabricatorAuthLinkController
             pht('Account Already Linked'),
             array(
               pht(
-                'Your Phabricator account is already linked to an external '.
+                'Your ditCraft account is already linked to an external '.
                 'account for this provider.'),
             ));
         }

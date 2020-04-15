@@ -255,7 +255,7 @@ final class DiffusionRepositoryClusterEngine extends Phobject {
         throw new Exception(
           pht(
             'Repository "%s" exists on more than one device, but no device '.
-            'has any repository version information. Phabricator can not '.
+            'has any repository version information. ditCraft can not '.
             'guess which copy of the existing data is authoritative. Promote '.
             'a device or see "Ambiguous Leaders" in the documentation.',
             $repository->getDisplayName()));

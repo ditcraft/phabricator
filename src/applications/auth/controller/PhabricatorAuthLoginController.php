@@ -72,7 +72,7 @@ final class PhabricatorAuthLoginController
     }
 
     if ($account->getUserPHID()) {
-      // The account is already attached to a Phabricator user, so this is
+      // The account is already attached to a ditCraft user, so this is
       // either a login or a bad account link request.
       if (!$viewer->isLoggedIn()) {
         if ($provider->shouldAllowLogin()) {
@@ -81,7 +81,7 @@ final class PhabricatorAuthLoginController
           return $this->renderError(
             pht(
               'The external account ("%s") you just authenticated with is '.
-              'not configured to allow logins on this Phabricator install. '.
+              'not configured to allow logins on this ditCraft install. '.
               'An administrator may have recently disabled it.',
               $provider->getProviderName()));
         }
@@ -95,13 +95,13 @@ final class PhabricatorAuthLoginController
         return $this->renderError(
           pht(
             'The external account ("%s") you just used to log in is already '.
-            'associated with another Phabricator user account. Log in to the '.
-            'other Phabricator account and unlink the external account before '.
-            'linking it to a new Phabricator account.',
+            'associated with another ditCraft user account. Log in to the '.
+            'other ditCraft account and unlink the external account before '.
+            'linking it to a new ditCraft account.',
             $provider->getProviderName()));
       }
     } else {
-      // The account is not yet attached to a Phabricator user, so this is
+      // The account is not yet attached to a ditCraft user, so this is
       // either a registration or an account link request.
       if (!$viewer->isLoggedIn()) {
         if ($provider->shouldAllowRegistration() || $invite) {
@@ -110,7 +110,7 @@ final class PhabricatorAuthLoginController
           return $this->renderError(
             pht(
               'The external account ("%s") you just authenticated with is '.
-              'not configured to allow registration on this Phabricator '.
+              'not configured to allow registration on this ditCraft '.
               'install. An administrator may have recently disabled it.',
               $provider->getProviderName()));
         }
@@ -128,7 +128,7 @@ final class PhabricatorAuthLoginController
         if ($existing_accounts) {
           return $this->renderError(
             pht(
-              'Your Phabricator account is already connected to an external '.
+              'Your ditCraft account is already connected to an external '.
               'account on this provider ("%s"), but you are currently logged '.
               'in to the provider with a different account. Log out of the '.
               'external service, then log back in with the correct account '.
@@ -142,7 +142,7 @@ final class PhabricatorAuthLoginController
           return $this->renderError(
             pht(
               'The external account ("%s") you just authenticated with is '.
-              'not configured to allow account linking on this Phabricator '.
+              'not configured to allow account linking on this ditCraft '.
               'install. An administrator may have recently disabled it.',
               $provider->getProviderName()));
         }
@@ -162,7 +162,7 @@ final class PhabricatorAuthLoginController
       return $this->renderError(
         pht(
           'The external account you just logged in with is not associated '.
-          'with a valid Phabricator user.'));
+          'with a valid ditCraft user.'));
     }
 
     return $this->loginUser($user);

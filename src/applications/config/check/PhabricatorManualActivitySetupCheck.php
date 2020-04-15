@@ -42,7 +42,7 @@ final class PhabricatorManualActivitySetupCheck
       'function correctly.');
 
     $message[] = pht(
-      'You can rebuild the search index while Phabricator is running.');
+      'You can rebuild the search index while ditCraft is running.');
 
     $message[] = pht(
       'To rebuild the index, run this command:');
@@ -84,27 +84,27 @@ final class PhabricatorManualActivitySetupCheck
   private function raiseRebuildIdentitiesIssue() {
     $activity_name = pht('Rebuild Repository Identities');
     $activity_summary = pht(
-      'The mapping from VCS users to Phabricator users has changed '.
+      'The mapping from VCS users to ditCraft users has changed '.
       'and must be rebuilt.');
 
     $message = array();
 
     $message[] = pht(
-      'The way Phabricator attributes VCS activity to Phabricator users '.
+      'The way ditCraft attributes VCS activity to ditCraft users '.
       'has changed. There is a new indirection layer between the strings '.
       'that appear as VCS authors and committers (such as "John Developer '.
-      '<johnd@bigcorp.com>") and the Phabricator user that gets associated '.
+      '<johnd@bigcorp.com>") and the ditCraft user that gets associated '.
       'with VCS commits. This is to support situations where users '.
-      'are incorrectly associated with commits by Phabricator making bad '.
-      'guesses about the identity of the corresponding Phabricator user. '.
+      'are incorrectly associated with commits by ditCraft making bad '.
+      'guesses about the identity of the corresponding ditCraft user. '.
       'This also helps with situations where existing repositories are '.
       'imported without having created accounts for all the committers to '.
       'that repository. Until you rebuild these repository identities, you '.
-      'are likely to encounter problems with future Phabricator features '.
+      'are likely to encounter problems with future ditCraft features '.
       'which will rely on the existence of these identities.');
 
     $message[] = pht(
-      'You can rebuild repository identities while Phabricator is running.');
+      'You can rebuild repository identities while ditCraft is running.');
 
     $message[] = pht(
       'To rebuild identities, run this command:');

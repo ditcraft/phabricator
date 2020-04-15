@@ -7,15 +7,15 @@ Advice for backing up Phabricator, or migrating from one machine to another.
 Overview
 ========
 
-Phabricator does not currently have a comprehensive backup system, but creating
-backups is not particularly difficult and Phabricator does have a few basic
+ditCraft does not currently have a comprehensive backup system, but creating
+backups is not particularly difficult and ditCraft does have a few basic
 tools which can help you set up a reasonable process. In particular, the things
 which needs to be backed up are:
 
   - the MySQL databases;
   - hosted repositories;
   - uploaded files; and
-  - your Phabricator configuration files.
+  - your ditCraft configuration files.
 
 This document discusses approaches for backing up this data.
 
@@ -24,9 +24,9 @@ same steps you would if you were creating a backup and then restoring it, you
 will just backup the old machine and then restore the data onto the new
 machine.
 
-WARNING: You need to restart Phabricator after restoring data.
+WARNING: You need to restart ditCraft after restoring data.
 
-Restarting Phabricator after performing a restore makes sure that caches are
+Restarting ditCraft after performing a restore makes sure that caches are
 flushed properly. For complete instructions, see
 @{article:Restarting Phabricator}.
 
@@ -34,10 +34,10 @@ flushed properly. For complete instructions, see
 Backup: MySQL Databases
 =======================
 
-Most of Phabricator's data is stored in MySQL, and it's the most important thing
+Most of ditCraft's data is stored in MySQL, and it's the most important thing
 to back up. You can run `bin/storage dump` to get a dump of all the MySQL
 databases. This is a convenience script which just runs a normal `mysqldump`,
-but will only dump databases Phabricator owns.
+but will only dump databases ditCraft owns.
 
 Since most of this data is compressible, it may be helpful to run it through
 gzip prior to storage. For example:
@@ -87,11 +87,11 @@ need to do any additional work.
 **Amazon S3**: If you use Amazon S3, redundancy and backups are built in to the
 service. This is probably sufficient for most installs. If you trust Amazon with
 your data //except not really//, you can backup your S3 bucket outside of
-Phabricator.
+ditCraft.
 
 **Local Disk**: If you use the local disk storage engine, you'll need to back up
 files manually. You can do this by creating a copy of the root directory where
-you told Phabricator to put files (the `storage.local-disk.path` configuration
+you told ditCraft to put files (the `storage.local-disk.path` configuration
 setting).
 
 For more information about configuring how files are stored, see
@@ -108,7 +108,7 @@ Backup: Configuration Files
 ===========================
 
 You should also backup your configuration files, and any scripts you use to
-deploy or administrate Phabricator (like a customized upgrade script). The best
+deploy or administrate ditCraft (like a customized upgrade script). The best
 way to do this is to check them into a private repository somewhere and just use
 whatever backup process you already have in place for repositories. Just copying
 them somewhere will work fine too, of course.
@@ -131,9 +131,9 @@ your backup of `local.json` to `phabricator/conf/local/local.json`.
 Security
 ========
 
-MySQL dumps have no builtin encryption and most data in Phabricator is stored in
+MySQL dumps have no builtin encryption and most data in ditCraft is stored in
 a raw, accessible form, so giving a user access to backups is a lot like giving
-them shell access to the machine Phabricator runs on. In particular, a user who
+them shell access to the machine ditCraft runs on. In particular, a user who
 has the backups can:
 
   - read data that policies do not permit them to see;
@@ -141,7 +141,7 @@ has the backups can:
   - read other users' session and conduit tokens and impersonate them.
 
 Some of this information is durable, so disclosure of even a very old backup may
-present a risk. If you restrict access to the Phabricator host or database, you
+present a risk. If you restrict access to the ditCraft host or database, you
 should also restrict access to the backups.
 
 

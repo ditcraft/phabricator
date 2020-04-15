@@ -28,9 +28,9 @@ final class PhabricatorPeopleEmailLoginMailEngine
     $is_set_password = $this->isSetPasswordWorkflow();
 
     if ($is_set_password) {
-      $subject = pht('[Phabricator] Account Password Link');
+      $subject = pht('[ditCraft] Account Password Link');
     } else {
-      $subject = pht('[Phabricator] Account Login Link');
+      $subject = pht('[ditCraft] Account Login Link');
     }
 
     $recipient = $this->getRecipient();
@@ -72,7 +72,7 @@ final class PhabricatorPeopleEmailLoginMailEngine
           $login_uri);
       } else if ($is_serious) {
         $body[] = pht(
-          "You can use this link to reset your Phabricator password:".
+          "You can use this link to reset your ditCraft password:".
           "\n\n  %s\n",
           $login_uri);
       } else {
@@ -90,7 +90,7 @@ final class PhabricatorPeopleEmailLoginMailEngine
       }
     } else {
       $body[] = pht(
-        "You can use this login link to regain access to your Phabricator ".
+        "You can use this login link to regain access to your ditCraft ".
         "account:".
         "\n\n".
         "  %s\n",

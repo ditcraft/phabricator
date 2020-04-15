@@ -88,7 +88,7 @@ final class PhabricatorConduitSearchEngine
               pht('Deprecated Methods'),
               pht(
                 'Show old methods which will be deleted in a future '.
-                'version of Phabricator.')),
+                'version of ditCraft.')),
             $is_deprecated));
   }
 

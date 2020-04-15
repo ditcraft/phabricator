@@ -542,9 +542,9 @@ final class DifferentialDiff
       'buildable.revision' =>
         pht('The differential revision ID, if applicable.'),
       'repository.callsign' =>
-        pht('The callsign of the repository in Phabricator.'),
+        pht('The callsign of the repository in ditCraft.'),
       'repository.phid' =>
-        pht('The PHID of the repository in Phabricator.'),
+        pht('The PHID of the repository in ditCraft.'),
       'repository.vcs' =>
         pht('The version control system, either "svn", "hg" or "git".'),
       'repository.uri' =>

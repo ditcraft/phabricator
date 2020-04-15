@@ -22,7 +22,7 @@ final class PhabricatorTitleGlyphsSetting
 
   protected function getControlInstructions() {
     return pht(
-      'Phabricator uses unicode glyphs in page titles to provide a compact '.
+      'ditCraft uses unicode glyphs in page titles to provide a compact '.
       'representation of the current application. You can substitute plain '.
       'text instead if these glyphs do not display on your system.');
   }

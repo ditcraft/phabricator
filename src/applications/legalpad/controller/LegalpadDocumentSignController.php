@@ -265,7 +265,7 @@ final class LegalpadDocumentSignController extends LegalpadController {
       ->setEpoch($content_updated);
 
     // If we're showing the user this document because it's required to use
-    // Phabricator and they haven't signed it, don't show the "Manage" button,
+    // ditCraft and they haven't signed it, don't show the "Manage" button,
     // since it won't work.
     $is_gate = $this->getIsSessionGate();
     if (!$is_gate) {

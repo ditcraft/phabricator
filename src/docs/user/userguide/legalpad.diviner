@@ -84,7 +84,7 @@ do other things with their account (you'll need to agree to it, too, as soon
 as you save your changes, so that will give you a sense of the workflow).
 
 Note that although users who have not signed all of the required documents can
-not use most Phabricator functions, they can browse other Legalpad documents
+not use most ditCraft functions, they can browse other Legalpad documents
 that they have permission to see. This allows a terms document to be
 supplemented with additional policy or guideline documents that users are free
 to review before agreeing to the terms.

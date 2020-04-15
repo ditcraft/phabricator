@@ -391,7 +391,7 @@ final class DrydockLandRepositoryOperation
           'title' => pht('Staging Unavailable'),
           'body' => pht(
             'When this diff was generated, the server was running an older '.
-            'version of Phabricator which did not support staging areas, so '.
+            'version of ditCraft which did not support staging areas, so '.
             'the change was not pushed to staging. Changes must be pushed '.
             'to staging before they can be landed from the web.'),
         );
@@ -400,7 +400,7 @@ final class DrydockLandRepositoryOperation
           'title' => pht('Repository Unsupported'),
           'body' => pht(
             'When this diff was generated, the server was running an older '.
-            'version of Phabricator which did not support staging areas for '.
+            'version of ditCraft which did not support staging areas for '.
             'this version control system, so the change was not pushed to '.
             'staging. Changes must be pushed to staging before they can be '.
             'landed from the web.'),

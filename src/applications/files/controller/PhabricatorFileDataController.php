@@ -101,7 +101,7 @@ final class PhabricatorFileDataController extends PhabricatorFileController {
       // are likely immune to XSS and CSRF. However, an attacker may still be
       // able to set cookies on this domain (for example, to fixate your
       // session). For now, we accept these risks because users running
-      // Phabricator in this mode are knowingly accepting a security risk
+      // ditCraft in this mode are knowingly accepting a security risk
       // against setup advice, and there's significant value in having
       // API development against test and production installs work the same
       // way.

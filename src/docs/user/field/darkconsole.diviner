@@ -6,7 +6,7 @@ Enabling and using the built-in debugging and performance console.
 Overview
 ========
 
-DarkConsole is a debugging console built into Phabricator which exposes
+DarkConsole is a debugging console built into ditCraft which exposes
 configuration, performance and error information. It can help you detect,
 understand and resolve bugs and performance problems in Phabricator
 applications.

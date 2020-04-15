@@ -43,7 +43,7 @@ Here are some examples of good ways to start a problem description:
 > to track tasks...
 
 > I have poor eyesight, and use a screenreader to help me use software like
-> Phabricator in my job as a developer. I'm having difficulty...
+> ditCraft in my job as a developer. I'm having difficulty...
 
 > We work on a large server program which has very long compile times.
 > Switching branches is a huge pain (you have to rebuild the binary after
@@ -71,7 +71,7 @@ are not very good:
 > That is a problem.
 
 > {icon times color=red} I've used some other software that has a cool
-> feature. Phabricator should have that feature too.
+> feature. ditCraft should have that feature too.
 
 These problem descriptions are not helpful. They do not describe goals or
 provide context.

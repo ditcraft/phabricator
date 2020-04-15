@@ -22,7 +22,7 @@ final class PhabricatorEmailFormatSetting
 
   protected function getControlInstructions() {
     return pht(
-      'You can opt to receive plain text email from Phabricator instead '.
+      'You can opt to receive plain text email from ditCraft instead '.
       'of HTML email. Plain text email works better with some clients.');
   }
 

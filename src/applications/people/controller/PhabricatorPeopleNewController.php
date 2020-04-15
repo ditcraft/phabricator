@@ -207,7 +207,7 @@ final class PhabricatorPeopleNewController
             "    an address to use in the //From// header.\n".
             "  - If the account creates commits, Git and Mercurial require ".
             "    an email address for authorship.\n".
-            "  - If you send email //to// Phabricator on behalf of the ".
+            "  - If you send email //to// ditCraft on behalf of the ".
             "    account, the address can identify the sender.\n".
             "  - Some internal authentication functions depend on accounts ".
             "    having an email address.\n".

@@ -141,7 +141,7 @@ final class PhabricatorConduitAPIController
   }
 
   /**
-   * Authenticate the client making the request to a Phabricator user account.
+   * Authenticate the client making the request to a ditCraft user account.
    *
    * @param   ConduitAPIRequest Request being executed.
    * @param   dict              Request metadata.
@@ -235,7 +235,7 @@ final class PhabricatorConduitAPIController
           return array(
             'ERR-INVALID-AUTH',
             pht(
-              'This request originates from outside of the Phabricator '.
+              'This request originates from outside of the ditCraft '.
               'cluster address range. Requests signed with trusted '.
               'device keys must originate from within the cluster.'),
           );
@@ -331,14 +331,14 @@ final class PhabricatorConduitAPIController
         }
       }
 
-      // If this is a "clr-" token, Phabricator must be configured in cluster
+      // If this is a "clr-" token, ditCraft must be configured in cluster
       // mode and the remote address must be a cluster node.
       if ($token->getTokenType() == PhabricatorConduitToken::TYPE_CLUSTER) {
         if (!PhabricatorEnv::isClusterRemoteAddress()) {
           return array(
             'ERR-INVALID-AUTH',
             pht(
-              'This request originates from outside of the Phabricator '.
+              'This request originates from outside of the ditCraft '.
               'cluster address range. Requests signed with cluster API '.
               'tokens must originate from within the cluster.'),
           );

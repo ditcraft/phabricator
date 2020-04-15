@@ -28,7 +28,7 @@ final class PhabricatorSetupIssue extends Phobject {
     $message = pht(
       "Unable to connect to MySQL!\n\n".
       "%s\n\n".
-      "Make sure Phabricator and MySQL are correctly configured.",
+      "Make sure ditCraft and MySQL are correctly configured.",
       $ex->getMessage());
 
     $issue = id(new self())
@@ -139,7 +139,7 @@ final class PhabricatorSetupIssue extends Phobject {
    * Set an explicit value to display when showing the user PHP configuration
    * values.
    *
-   * If Phabricator has changed a value by the time a config issue is raised,
+   * If ditCraft has changed a value by the time a config issue is raised,
    * you can provide the original value here so the UI makes sense. For example,
    * we alter `memory_limit` during startup, so if the original value is not
    * provided it will look like it is always set to `-1`.

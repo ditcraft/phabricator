@@ -16,10 +16,10 @@ final class PhabricatorWebServerSetupCheck extends PhabricatorSetupCheck {
         ->setSummary(pht('Pagespeed is enabled, but should be disabled.'))
         ->setMessage(
           pht(
-            'Phabricator received an "X-Mod-Pagespeed" or "X-Page-Speed" '.
+            'ditCraft received an "X-Mod-Pagespeed" or "X-Page-Speed" '.
             'HTTP header on this request, which indicates that you have '.
             'enabled "mod_pagespeed" on this server. This module is not '.
-            'compatible with Phabricator. You should disable it.'));
+            'compatible with ditCraft. You should disable it.'));
     }
 
     $base_uri = PhabricatorEnv::getEnvConfig('phabricator.base-uri');
@@ -72,9 +72,9 @@ final class PhabricatorWebServerSetupCheck extends PhabricatorSetupCheck {
       $body = trim($body);
       if (preg_match('/^t2/', $body)) {
         $message = pht(
-          'Phabricator appears to be installed on a very small EC2 instance '.
+          'ditCraft appears to be installed on a very small EC2 instance '.
           '(of class "%s") with burstable CPU. This is strongly discouraged. '.
-          'Phabricator regularly needs CPU, and these instances are often '.
+          'ditCraft regularly needs CPU, and these instances are often '.
           'choked to death by CPU throttling. Use an instance with a normal '.
           'CPU instead.',
           $body);
@@ -83,7 +83,7 @@ final class PhabricatorWebServerSetupCheck extends PhabricatorSetupCheck {
           ->setName(pht('Installed on Burstable CPU Instance'))
           ->setSummary(
             pht(
-              'Do not install Phabricator on an instance class with '.
+              'Do not install ditCraft on an instance class with '.
               'burstable CPU.'))
           ->setMessage($message);
       }
@@ -102,7 +102,7 @@ final class PhabricatorWebServerSetupCheck extends PhabricatorSetupCheck {
 
     if (BaseHTTPFuture::getHeader($headers, 'Content-Encoding') != 'gzip') {
       $message = pht(
-        'Phabricator sent itself a request with "Accept-Encoding: gzip", '.
+        'ditCraft sent itself a request with "Accept-Encoding: gzip", '.
         'but received an uncompressed response.'.
         "\n\n".
         'This may indicate that your webserver is not configured to '.
@@ -144,7 +144,7 @@ final class PhabricatorWebServerSetupCheck extends PhabricatorSetupCheck {
           ->truncateString($body);
 
         $message = pht(
-          'Phabricator sent itself a test request with the '.
+          'ditCraft sent itself a test request with the '.
           '"X-Phabricator-SelfCheck" header and expected to get a valid JSON '.
           'response back. Instead, the response begins:'.
           "\n\n".
@@ -154,7 +154,7 @@ final class PhabricatorWebServerSetupCheck extends PhabricatorSetupCheck {
           phutil_tag('pre', array(), $short));
       } else {
         $message = pht(
-          'Phabricator sent itself a test request and expected to get a bare '.
+          'ditCraft sent itself a test request and expected to get a bare '.
           'JSON response back. It received a JSON response, but the response '.
           'had extra whitespace at the beginning or end.'.
           "\n\n".
@@ -180,9 +180,9 @@ final class PhabricatorWebServerSetupCheck extends PhabricatorSetupCheck {
     $actual_pass = idx($structure, 'pass');
     if (($expect_user != $actual_user) || ($actual_pass != $expect_pass)) {
       $message = pht(
-        'Phabricator sent itself a test request with an "Authorization" HTTP '.
+        'ditCraft sent itself a test request with an "Authorization" HTTP '.
         'header, and expected those credentials to be transmitted. However, '.
-        'they were absent or incorrect when received. Phabricator sent '.
+        'they were absent or incorrect when received. ditCraft sent '.
         'username "%s" with password "%s"; received username "%s" and '.
         'password "%s".'.
         "\n\n".
@@ -203,11 +203,11 @@ final class PhabricatorWebServerSetupCheck extends PhabricatorSetupCheck {
     $actual_path = idx($structure, 'path');
     if ($expect_path != $actual_path) {
       $message = pht(
-        'Phabricator sent itself a test request with an unusual path, to '.
+        'ditCraft sent itself a test request with an unusual path, to '.
         'test if your webserver is rewriting paths correctly. The path was '.
         'not transmitted correctly.'.
         "\n\n".
-        'Phabricator sent a request to path "%s", and expected the webserver '.
+        'ditCraft sent a request to path "%s", and expected the webserver '.
         'to decode and rewrite that path so that it received a request for '.
         '"%s". However, it received a request for "%s" instead.'.
         "\n\n".
@@ -239,12 +239,12 @@ final class PhabricatorWebServerSetupCheck extends PhabricatorSetupCheck {
 
     if (($expect_key !== $actual_key) || ($expect_value !== $actual_value)) {
       $message = pht(
-        'Phabricator sent itself a test request with an HTTP GET parameter, '.
+        'ditCraft sent itself a test request with an HTTP GET parameter, '.
         'but the parameter was not transmitted. Sent "%s" with value "%s", '.
         'got "%s" with value "%s".'.
         "\n\n".
         'Your webserver is configured incorrectly and large parts of '.
-        'Phabricator will not work until this issue is corrected.'.
+        'ditCraft will not work until this issue is corrected.'.
         "\n\n".
         '(This problem can be caused by a missing "QSA" in your RewriteRule.)',
         $expect_key,

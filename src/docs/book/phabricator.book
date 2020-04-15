@@ -1,8 +1,8 @@
 {
   "name": "phabdev",
-  "title": "Phabricator Technical Documentation",
-  "short": "Phabricator Tech Docs",
-  "preface": "Technical reference material for Phabricator developers.",
+  "title": "ditCraft Technical Documentation",
+  "short": "ditCraft Tech Docs",
+  "preface": "Technical reference material for ditCraft developers.",
   "root": "../../../",
   "uri.source":
     "https://secure.phabricator.com/diffusion/P/browse/master/%f$%l",

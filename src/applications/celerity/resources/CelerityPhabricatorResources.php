@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Defines Phabricator's static resources.
+ * Defines ditCraft's static resources.
  */
 final class CelerityPhabricatorResources extends CelerityResourcesOnDisk {
 

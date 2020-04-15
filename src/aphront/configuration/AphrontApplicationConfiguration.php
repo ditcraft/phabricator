@@ -421,9 +421,9 @@ final class AphrontApplicationConfiguration
           throw new AphrontMalformedRequestException(
             pht('No %s', 'SERVER_ADDR'),
             pht(
-              'Phabricator is configured to operate in cluster mode, but '.
+              'ditCraft is configured to operate in cluster mode, but '.
               '%s is not defined in the request context. Your webserver '.
-              'configuration needs to forward %s to PHP so Phabricator can '.
+              'configuration needs to forward %s to PHP so ditCraft can '.
               'reject requests received on external interfaces.',
               'SERVER_ADDR',
               'SERVER_ADDR'));
@@ -433,7 +433,7 @@ final class AphrontApplicationConfiguration
           throw new AphrontMalformedRequestException(
             pht('External Interface'),
             pht(
-              'Phabricator is configured in cluster mode and the address '.
+              'ditCraft is configured in cluster mode and the address '.
               'this request was received on ("%s") is not whitelisted as '.
               'a cluster address.',
               $server_addr));

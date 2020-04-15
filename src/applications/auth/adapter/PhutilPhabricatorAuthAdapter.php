@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Authentication adapter for Phabricator OAuth2.
+ * Authentication adapter for ditCraft OAuth2.
  */
 final class PhutilPhabricatorAuthAdapter extends PhutilOAuthAuthAdapter {
 
@@ -89,7 +89,7 @@ final class PhutilPhabricatorAuthAdapter extends PhutilOAuthAuthAdapter {
     } catch (PhutilJSONParserException $ex) {
       throw new Exception(
         pht(
-          'Expected valid JSON response from Phabricator %s request.',
+          'Expected valid JSON response from ditCraft %s request.',
           'user.whoami'),
         $ex);
     }

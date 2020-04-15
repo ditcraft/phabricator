@@ -25,7 +25,7 @@ final class PhabricatorRobotsController extends PhabricatorController {
     // Add a small crawl delay (number of seconds between requests) for spiders
     // which respect it. The intent here is to prevent spiders from affecting
     // performance for users. The possible cost is slower indexing, but that
-    // seems like a reasonable tradeoff, since most Phabricator installs are
+    // seems like a reasonable tradeoff, since most ditCraft installs are
     // probably not hugely concerned about cutting-edge SEO.
     $out[] = 'Crawl-delay: 1';
 

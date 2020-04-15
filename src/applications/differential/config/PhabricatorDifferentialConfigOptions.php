@@ -228,7 +228,7 @@ EOHELP
         ->setSummary(pht('Attach patches to email, as text attachments.'))
         ->setDescription(
           pht(
-            'If you set this to true, Phabricator will attach patches to '.
+            'If you set this to true, ditCraft will attach patches to '.
             'Differential mail (as text attachments). This will not work if '.
             'you are using SendGrid as your mail adapter.')),
       $this->newOption(

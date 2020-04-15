@@ -2,7 +2,7 @@
 
 /**
  * Publishes tasks representing work that needs to be done into Asana, and
- * updates the tasks as the corresponding Phabricator objects are updated.
+ * updates the tasks as the corresponding ditCraft objects are updated.
  */
 final class DoorkeeperAsanaFeedWorker extends DoorkeeperFeedWorker {
 
@@ -256,7 +256,7 @@ final class DoorkeeperAsanaFeedWorker extends DoorkeeperFeedWorker {
 
     $sub_editor = new PhabricatorEdgeEditor();
 
-    // First, find all the object references in Phabricator for tasks that we
+    // First, find all the object references in ditCraft for tasks that we
     // know about and import their objects from Asana.
     $sub_edges = $edges[$src_phid][$etype_sub];
     $sub_refs = array();
@@ -282,7 +282,7 @@ final class DoorkeeperAsanaFeedWorker extends DoorkeeperFeedWorker {
       }
     }
 
-    // Remove any edges in Phabricator which don't have valid tasks in Asana.
+    // Remove any edges in ditCraft which don't have valid tasks in Asana.
     // These are likely tasks which have been deleted. We're going to respawn
     // them.
     foreach ($sub_edges as $sub_phid => $sub_edge) {
@@ -512,7 +512,7 @@ final class DoorkeeperAsanaFeedWorker extends DoorkeeperFeedWorker {
   private function getSynchronizationWarning() {
     return pht(
       "\xE2\x9A\xA0 DO NOT EDIT THIS TASK \xE2\x9A\xA0\n".
-      "\xE2\x98\xA0 Your changes will not be reflected in Phabricator.\n".
+      "\xE2\x98\xA0 Your changes will not be reflected in ditCraft.\n".
       "\xE2\x98\xA0 Your changes will be destroyed the next time state ".
       "is synchronized.");
   }

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Consolidates Phabricator application cookies, including registration
+ * Consolidates ditCraft application cookies, including registration
  * and session management.
  *
  * @task clientid   Client ID Cookie

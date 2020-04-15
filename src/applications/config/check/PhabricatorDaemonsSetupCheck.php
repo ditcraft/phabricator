@@ -19,11 +19,11 @@ final class PhabricatorDaemonsSetupCheck extends PhabricatorSetupCheck {
       $doc_href = PhabricatorEnv::getDoclink('Managing Daemons with phd');
 
       $summary = pht(
-        'You must start the Phabricator daemons to send email, rebuild '.
+        'You must start the ditCraft daemons to send email, rebuild '.
         'search indexes, and do other background processing.');
 
       $message = pht(
-        'The Phabricator daemons are not running, so Phabricator will not '.
+        'The ditCraft daemons are not running, so ditCraft will not '.
         'be able to perform background processing (including sending email, '.
         'rebuilding search indexes, importing commits, cleaning up old data, '.
         'and running builds).'.
@@ -40,7 +40,7 @@ final class PhabricatorDaemonsSetupCheck extends PhabricatorSetupCheck {
 
       $this->newIssue('daemons.not-running')
         ->setShortName(pht('Daemons Not Running'))
-        ->setName(pht('Phabricator Daemons Are Not Running'))
+        ->setName(pht('ditCraft Daemons Are Not Running'))
         ->setSummary($summary)
         ->setMessage($message)
         ->addCommand('phabricator/ $ ./bin/phd start');

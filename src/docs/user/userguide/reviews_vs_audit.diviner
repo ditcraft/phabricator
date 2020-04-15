@@ -6,7 +6,7 @@ Discusses the differences between "review" and "audit" workflows.
 Overview
 ========
 
-Phabricator supports two similar but separate code review workflows: "review"
+ditCraft supports two similar but separate code review workflows: "review"
 and "audit".
 
 Review occurs in **Differential**, before changes are published. You can learn

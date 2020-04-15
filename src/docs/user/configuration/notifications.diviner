@@ -6,11 +6,11 @@ Guide to setting up notifications.
 Overview
 ========
 
-By default, Phabricator delivers information about events (like users creating
+By default, ditCraft delivers information about events (like users creating
 tasks or commenting on code reviews) through email and in-application
 notifications.
 
-Phabricator can also be configured to deliver notifications in real time, by
+ditCraft can also be configured to deliver notifications in real time, by
 popping up a message in any open browser windows if something has happened or
 an object has been updated.
 
@@ -64,7 +64,7 @@ a host firewall (like a security group in EC2), make sure traffic can reach the
 server.
 
 The server configuration is controlled by a configuration file, which is
-separate from Phabricator's configuration settings. The default file can
+separate from ditCraft's configuration settings. The default file can
 be found at `phabricator/conf/aphlict/aphlict.default.json`.
 
 To make adjustments to the default configuration, either copy this file to
@@ -121,9 +121,9 @@ if you are running a more complex configuration.
 Configuring Phabricator
 =======================
 
-After starting the server, configure Phabricator to connect to it by adjusting
+After starting the server, configure ditCraft to connect to it by adjusting
 `notification.servers`. This configuration option should have a list of servers
-that Phabricator should interact with.
+that ditCraft should interact with.
 
 Normally, you'll list one client server and one admin server, like this:
 
@@ -177,10 +177,10 @@ information that is useful in resolving issues.
 SSL and HTTPS
 =============
 
-If you serve Phabricator over HTTPS, you must also serve websockets over HTTPS.
+If you serve ditCraft over HTTPS, you must also serve websockets over HTTPS.
 Browsers will refuse to connect to `ws://` websockets from HTTPS pages.
 
-If a client connects to Phabricator over HTTPS, Phabricator will automatically
+If a client connects to ditCraft over HTTPS, ditCraft will automatically
 select an appropriate HTTPS service from `notification.servers` and instruct
 the browser to open a websocket connection with `wss://`.
 
@@ -259,10 +259,10 @@ server {
 
 With this approach, you should make these additional adjustments:
 
-**Phabricator Configuration**: The entry in `notification.servers` with type
+**ditCraft Configuration**: The entry in `notification.servers` with type
 `"client"` should have these adjustments made:
 
-  - Set `host` to the Phabricator host.
+  - Set `host` to the ditCraft host.
   - Set `port` to the standard HTTPS port (usually `443`).
   - Set `protocol` to `"https"`.
   - Set `path` to `/ws/`, so it matches the special `location` in your

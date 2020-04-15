@@ -46,7 +46,7 @@ Create a `.arcconfig` file in your project's working copy:
     "phabricator.uri" : "https://phabricator.example.com/"
   }
 
-Set `phabricator.uri` to the URI for your Phabricator install (where `arc`
+Set `phabricator.uri` to the URI for your ditCraft install (where `arc`
 should send changes to).
 
 NOTE: You should **commit this file** to the repository.
@@ -61,7 +61,7 @@ before you can perform this step.
   ...
 
 Follow the instructions. This will link your user account on your local machine
-to your Phabricator account.
+to your ditCraft account.
 
 = Send Changes For Review =
 

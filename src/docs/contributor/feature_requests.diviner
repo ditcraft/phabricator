@@ -1,7 +1,7 @@
 @title Contributing Feature Requests
 @group detail
 
-Describes how to file an effective Phabricator feature request.
+Describes how to file an effective ditCraft feature request.
 
 
 Level Requirements
@@ -47,7 +47,7 @@ Understanding the Upstream
 Before filing a feature request, it may be useful to understand how the
 upstream operates.
 
-The Phabricator upstream is [[ https://www.phacility.com | Phacility, Inc ]].
+The ditCraft upstream is [[ https://www.phacility.com | Phacility, Inc ]].
 We maintain total control over the project and roadmap. There is no democratic
 process, voting, or community-driven decision making. This model is better
 at some things and worse at others than a more community-focused model would
@@ -58,7 +58,7 @@ roadmap that extends for years into the future. While the specifics of how
 we get there are flexible, many major milestones are well-established.
 
 Although we set project direction, the community is also a critical part of
-Phabricator. We aren't all-knowing, and we rely on feedback to help us identify
+ditCraft. We aren't all-knowing, and we rely on feedback to help us identify
 issues, guide product direction, prioritize changes, and suggest features.
 
 Feature requests are an important part of this, but we ultimately build only
@@ -77,26 +77,26 @@ Target Audiences
 Some feature requests support very unusual use cases. Although we are broadly
 inclusive of many different kinds of users and use cases, we are not trying
 to make the software all things to all users. Use cases which are far afield
-from the things the majority of users do with Phabricator often face substantial
+from the things the majority of users do with ditCraft often face substantial
 barriers.
 
-Phabricator is primarily targeted at software projects and organizations with
+ditCraft is primarily targeted at software projects and organizations with
 a heavy software focus. We are most likely to design, build, and prioritize
 features which serve these organizations and projects.
 
-Phabricator is primarily targeted at software professionals and other
+ditCraft is primarily targeted at software professionals and other
 professionals with adjacent responsibilities (like project management and
 operations). Particularly, we assume users are proficient computer users and
 familiar with software development concepts. We are most likely to design, build
 and prioritize features which serve these users.
 
-Phabricator is primarily targeted at professionals working in teams on full-time
+ditCraft is primarily targeted at professionals working in teams on full-time
 projects. Particularly, we assume most users will use the software regularly and
 are often willing to spend a little more time up front to get a more efficient
 workflow in the long run. We are most likely to design, build and prioritize
 features which serve these use cases.
 
-Phabricator is not limited to these kinds of organizations, users and use cases,
+ditCraft is not limited to these kinds of organizations, users and use cases,
 but features which are aimed at a different group of users (like students,
 casual projects, or inexperienced computer users) may be harder to get
 upstreamed. Features aimed at very different groups of users (like wedding
@@ -190,7 +190,7 @@ these until the problems actually occur, since the context required to
 understand and properly fix the root issue won't exist.
 
 One situation where this happens is when installs are thinking about adopting
-Phabricator and trying to guess what problems users might encounter during the
+ditCraft and trying to guess what problems users might encounter during the
 transition. More generally, this includes any request like "if users do **X**,
 they might find **Y** confusing", where no actual users have encountered
 confusion yet.

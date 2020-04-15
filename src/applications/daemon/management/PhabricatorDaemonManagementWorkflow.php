@@ -93,7 +93,7 @@ abstract class PhabricatorDaemonManagementWorkflow
             pht(
               "You are trying to run a daemon as a nonstandard user, ".
               "and `%s` was not able to `%s` to the correct user. \n".
-              'Phabricator is configured to run daemons as "%s", '.
+              'ditCraft is configured to run daemons as "%s", '.
               'but the current user is "%s". '."\n".
               'Use `%s` to run as a different user, pass `%s` to ignore this '.
               'warning, or edit `%s` to change the configuration.',
@@ -579,7 +579,7 @@ abstract class PhabricatorDaemonManagementWorkflow
           $console->writeErr(
             "%s\n",
             pht(
-              'PID "%d" is not a known Phabricator daemon PID.',
+              'PID "%d" is not a known ditCraft daemon PID.',
               $pid));
           continue;
         } else {
