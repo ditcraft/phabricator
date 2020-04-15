@@ -7,7 +7,7 @@ final class PhabricatorPhabricatorAuthProvider
   const PROPERTY_PHABRICATOR_URI  = 'oauth2:phabricator:uri';
 
   public function getProviderName() {
-    return pht('Phabricator');
+    return pht('ditCraft');
   }
 
   public function getConfigurationHelp() {
@@ -54,7 +54,7 @@ final class PhabricatorPhabricatorAuthProvider
   }
 
   protected function getLoginIcon() {
-    return 'Phabricator';
+    return 'ditCraft';
   }
 
   private function isCreate() {

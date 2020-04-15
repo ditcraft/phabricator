@@ -241,7 +241,7 @@ final class PhabricatorMailEmailEngine
 
     // If we don't have a display name, fill in a default.
     if (!strlen($reply_address->getDisplayName())) {
-      $reply_address->setDisplayName(pht('Phabricator'));
+      $reply_address->setDisplayName(pht('ditCraft'));
     }
 
     return $reply_address;
@@ -509,7 +509,7 @@ final class PhabricatorMailEmailEngine
     $address = new PhutilEmailAddress($raw_address);
 
     if (!strlen($address->getDisplayName())) {
-      $address->setDisplayName(pht('Phabricator'));
+      $address->setDisplayName(pht('ditCraft'));
     }
 
     return $address;

@@ -229,7 +229,7 @@ final class DoorkeeperJIRAFeedWorker extends DoorkeeperFeedWorker {
         'globalId' => $object->getPHID(),
         'application' => array(
           'type' => 'com.phacility.phabricator',
-          'name' => 'Phabricator',
+          'name' => 'ditCraft',
         ),
         'relationship' => 'implemented in',
         'object' => array(
@@ -237,7 +237,7 @@ final class DoorkeeperJIRAFeedWorker extends DoorkeeperFeedWorker {
           'title'   => $publisher->getObjectTitle($object),
           'icon'    => array(
             'url16x16'  => $icon_uri,
-            'title'     => 'Phabricator',
+            'title'     => 'ditCraft',
           ),
           'status' => array(
             'resolved' => $publisher->isObjectClosed($object),
