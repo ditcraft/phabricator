@@ -19,7 +19,7 @@ Callers ask it for information about services, and it responds with details
 about which devices host those services. However, it can respond to a broader
 range of queries and provide more detailed responses than DNS alone can.
 
-Today, the primary use cases for Almanac are internal to Phabricator:
+Today, the primary use cases for Almanac are internal to ditCraft:
 
   - Providing a list of build servers to Drydock so it can run build and
     integration tasks.

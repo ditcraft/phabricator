@@ -60,7 +60,7 @@ final class PhabricatorPeopleWelcomeMailEngine
 
     $message = array();
 
-    $message[] = pht('Welcome to Phabricator!');
+    $message[] = pht('Welcome to ditCraft!');
 
     $message[] = pht(
       '%s (%s) has created an account for you.',

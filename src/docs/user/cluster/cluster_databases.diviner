@@ -47,7 +47,7 @@ options in good detail. You should understand MySQL replication before
 deploying it in production: ditCraft layers on top of it, and does not
 attempt to abstract it away.
 
-Some useful notes for configuring replication for Phabricator:
+Some useful notes for configuring replication for ditCraft:
 
 **Binlog Format**: ditCraft issues some queries which MySQL will detect as
 unsafe if you use the `STATEMENT` binlog format (the default). Instead, use

@@ -207,7 +207,7 @@ final class LegalpadDocumentSignController extends LegalpadController {
         // If the viewer is logged in, signing for themselves, send them to
         // the document page, which will show that they have signed the
         // document. Unless of course they were required to sign the
-        // document to use Phabricator; in that case try really hard to
+        // document to use ditCraft; in that case try really hard to
         // re-direct them to where they wanted to go.
         //
         // Otherwise, send them to a completion page.
@@ -681,7 +681,7 @@ final class LegalpadDocumentSignController extends LegalpadController {
     $body = pht(
       "%s:\n\n".
       "This email address was used to sign a Legalpad document ".
-      "in Phabricator:\n\n".
+      "in ditCraft:\n\n".
       "  %s\n\n".
       "Please verify you own this email address and accept the ".
       "agreement by clicking this link:\n\n".

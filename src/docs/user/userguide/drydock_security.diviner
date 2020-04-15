@@ -105,7 +105,7 @@ approach which defuses only the threats you care about.
 Attackers have three primary targets:
 
   - capturing hosts;
-  - compromising Phabricator; and
+  - compromising ditCraft; and
   - compromising the integrity of other Drydock processes.
 
 **Attacks against hosts** are the least sophisticated. In this scenario, an

@@ -62,7 +62,7 @@ configured with `metamta.default-address`.
 When a user takes an action that generates mail, ditCraft sets the
 "Reply-To" addresss for the mail to that user's name and address. This means
 that users can reply to email to discuss changes, but: the conversation won't
-be recorded in Phabricator; and users will not be able to use email commands
+be recorded in ditCraft; and users will not be able to use email commands
 to take actions or make edits.
 
 To change this behavior so that users can interact with objects in Phabricator
