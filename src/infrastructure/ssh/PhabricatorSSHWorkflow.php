@@ -4,7 +4,7 @@ abstract class PhabricatorSSHWorkflow
   extends PhutilArgumentWorkflow {
 
   // NOTE: We are explicitly extending "PhutilArgumentWorkflow", not
-  // "PhabricatorManagementWorkflow". We want to avoid inheriting "getViewer()"
+  // "ditCraftManagementWorkflow". We want to avoid inheriting "getViewer()"
   // and other methods which assume workflows are administrative commands
   // like `bin/storage`.
 

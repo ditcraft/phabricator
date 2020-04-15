@@ -195,7 +195,7 @@ final class PhabricatorUserEmail
 
     $signature = null;
     if (!$is_serious) {
-      $signature = pht("Get Well Soon,\nPhabricator");
+      $signature = pht("Get Well Soon,\nditCraft ");
     }
 
     $body = sprintf(

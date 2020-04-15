@@ -68,7 +68,7 @@ final class PhabricatorPeopleWelcomeController
       ->appendRemarkupInstructions(
         pht(
           'This workflow will send this user ("%s") a copy of the "Welcome to '.
-          'Phabricator" email that users normally receive when their '.
+          'ditCraft " email that users normally receive when their '.
           'accounts are created by an administrator.',
           $user->getUsername()))
       ->appendRemarkupInstructions(

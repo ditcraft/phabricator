@@ -60,7 +60,7 @@ Once configured, accessing the distribution's domain name should return a
 ditCraft error page indicating that ditCraft does not recognize the
 domain. If you see this page, it means you've configured things correctly.
 
-Continue to "Configuring Phabricator", below.
+Continue to "Configuring ditCraft ", below.
 
 Approach: CloudFlare
 ========
@@ -85,7 +85,7 @@ Once configured, accessing the CNAME-forwarded subdomain should return a
 ditCraft error page indicating that ditCraft does not recognize the
 domain. If you see this page, it means you've configured things correctly.
 
-Continue to "Configuring Phabricator", below.
+Continue to "Configuring ditCraft ", below.
 
 Approach: Self Hosted
 ========
@@ -102,7 +102,7 @@ You can also configure a self-hosted domain to route through a caching server
 to provide some of the performance benefits of a CDN, but this is advanced and
 outside the scope of this documentation.
 
-Continue to "Configuring Phabricator", below.
+Continue to "Configuring ditCraft ", below.
 
 Configuring Phabricator
 ========

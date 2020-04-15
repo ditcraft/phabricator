@@ -31,7 +31,7 @@ final class PhabricatorDeveloperConfigOptions
         ->setDescription(
           pht(
             "DarkConsole is a development and profiling tool built into ".
-            "Phabricator's web interface. You should leave it disabled unless ".
+            "ditCraft's web interface. You should leave it disabled unless ".
             "you are developing or debugging ditCraft.\n\n".
             "Once you activate DarkConsole for the install, **you need to ".
             "enable it for your account before it will actually appear on ".

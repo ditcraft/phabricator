@@ -245,7 +245,7 @@ final class PhabricatorGlobalLock extends PhutilLock {
     // "AccessLog" if we do, since that's the only one we actually read any
     // parameters from.
 
-    // NOTE: "PhabricatorStartup" is only available from web requests, not
+    // NOTE: "ditCraftStartup" is only available from web requests, not
     // from CLI scripts.
     if (class_exists('PhabricatorStartup', false)) {
       $access_log = PhabricatorAccessLog::getLog();

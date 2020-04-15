@@ -186,7 +186,7 @@ abstract class PhabricatorCursorPagedPolicyAwareQuery
       throw new Exception(
         pht(
           'Expected "newInternalCursorFromExternalCursor()" to return an '.
-          'object of class "PhabricatorQueryCursor", but got "%s" (in '.
+          'object of class "ditCraftQueryCursor", but got "%s" (in '.
           'class "%s").',
           phutil_describe_type($cursor_object),
           get_class($this)));
