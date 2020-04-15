@@ -125,7 +125,7 @@ final class PhabricatorPeopleWelcomeMailEngine
 
     $is_serious = PhabricatorEnv::getEnvConfig('phabricator.serious-business');
     if (!$is_serious) {
-      return pht("Love,\nditCraft ");
+      return pht("Love,\nditCraft");
     }
 
     return null;

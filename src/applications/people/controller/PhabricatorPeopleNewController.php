@@ -182,7 +182,7 @@ final class PhabricatorPeopleNewController
           ->addCheckbox(
             'welcome',
             1,
-            pht('Send "Welcome to ditCraft " email with login instructions.'),
+            pht('Send "Welcome to ditCraft" email with login instructions.'),
             $welcome_checked));
     }
 
